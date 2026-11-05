@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GlassStudioCR · Pulido de parabrisas y focos a domicilio en la GAM</title>
-<meta name="description" content="No cambiés tu parabrisas: restauralo. Pulido de parabrisas, vidrios y focos a domicilio gratis en San José, Heredia y Alajuela. Protección cerámica incluida. Agendá en 1 minuto.">
+<meta name="description" content="No cambiés tu parabrisas: restauralo. Pulido de parabrisas, vidrios y focos a domicilio gratis en San José, Heredia y Alajuela. Promo: agendá en línea y te regalamos el vidrio trasero y los retrovisores.">
 <meta name="theme-color" content="#071a1d">
 <link rel="canonical" href="https://glassstudiocr.com/">
 <meta property="og:type" content="website">
@@ -33,7 +33,9 @@
   "image": "https://citas.glassstudiocr.com/reservar/og.jpg",
   "logo": "https://glassstudiocr.com/favicon.png",
   "priceRange": "₡20 000 – ₡40 000",
-  "address": {"@type": "PostalAddress", "addressCountry": "CR", "addressRegion": "San José"},
+  "address": {"@type": "PostalAddress", "addressCountry": "CR", "addressRegion": "Alajuela", "addressLocality": "Alajuela"},
+  "sameAs": ["https://www.facebook.com/profile.php?id=61585780980631", "https://www.instagram.com/glassstudiocr/", "https://www.tiktok.com/@glassstudiocr"],
+  "potentialAction": {"@type": "ReserveAction", "target": "https://citas.glassstudiocr.com/reservar/"},
   "areaServed": [
     {"@type": "AdministrativeArea", "name": "San José"},
     {"@type": "AdministrativeArea", "name": "Heredia"},
@@ -107,6 +109,15 @@ header{position:sticky;top:0;z-index:20;background:rgba(7,26,29,.82);backdrop-fi
 .hero h1 em{font-style:normal;color:var(--glass);background:linear-gradient(90deg,var(--glass),#c8fbff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .hero .lead{margin-bottom:26px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.promo{display:flex;align-items:center;gap:14px;margin:0 0 22px;padding:14px 18px;border-radius:var(--r);text-decoration:none;
+  background:linear-gradient(135deg,#ffe08a,var(--cta));color:var(--ctaink);box-shadow:0 10px 26px rgba(0,0,0,.3);max-width:560px;transition:transform .15s}
+.promo:hover{transform:translateY(-2px)}
+.promo i{font-style:normal;font-size:30px;flex:none}
+.promo b{display:block;font:800 17px/1.2 "Bricolage Grotesque",sans-serif}
+.promo small{display:block;font-size:14px;opacity:.85;margin-top:2px}
+.promo .go{margin-left:auto;font-weight:800;font-size:22px;flex:none}
+.gr{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:22px}
+.gr .stars{color:var(--cta);font-size:20px;letter-spacing:2px}
 .chips{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:26px;color:var(--mute);font-size:15px;list-style:none;padding:0}
 .chips li{display:flex;align-items:center;gap:8px}
 .chips svg{width:18px;height:18px;color:var(--glass)}
@@ -268,6 +279,7 @@ footer a{text-decoration:none}
         <span class="status" id="status"><span class="dot"></span><span id="status-t">Lun a sáb 6 am – 4 pm · Dom 8 am – 3 pm</span></span>
         <h1>No cambiés tu parabrisas. <em>Restauralo.</em></h1>
         <p class="lead">Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones de tus vidrios y focos. Llegamos a tu casa o trabajo en la GAM y te lo dejamos como de fábrica, por una fracción de lo que cuesta cambiarlo.</p>
+        <a class="promo js-book" href="https://citas.glassstudiocr.com/reservar/"><i>🎁</i><span><b>Promo: agendá en línea tu parabrisas y te regalamos el vidrio trasero y los retrovisores</b><small>Sedán o SUV, mismo regalo · solo agendando desde la página</small></span><span class="go">→</span></a>
         <div class="ctas">
           <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/"><svg><use href="#i-cal"/></svg>Agendar en 1 minuto</a>
           <a class="btn btn-ghost js-wa" data-msg="¡Hola GlassStudioCR! Quiero cotizar. Les mando una foto de mi vidrio:" href="https://wa.me/50670892537"><svg style="color:var(--wa)"><use href="#i-wa"/></svg>Cotizar con una foto</a>
@@ -447,6 +459,10 @@ footer a{text-decoration:none}
           <blockquote>“Recomendado al 100 %.”</blockquote>
           <figcaption><span class="av">J</span><span><b>Jhulian R.</b><small>Comentario en Instagram</small></span></figcaption>
         </figure>
+      </div>
+      <div class="card gr reveal">
+        <div><span class="stars" aria-hidden="true">★★★★★</span><p style="margin-top:4px">¿Ya te atendimos? Tu reseña en Google ayuda a otros a encontrarnos.</p></div>
+        <a class="btn btn-ghost" href="https://g.page/r/CZLaHgXQEDONEAI/review" target="_blank" rel="noopener">Dejar mi reseña en Google</a>
       </div>
     </div>
   </section>
