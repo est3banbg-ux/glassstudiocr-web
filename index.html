@@ -287,16 +287,16 @@ footer a{text-decoration:none}
           <img src="despues.jpg" alt="El mismo parabrisas después del pulido">   (capa "after")
           Usá dos fotos del MISMO carro, desde el MISMO ángulo y con la misma luz.
         -->
-        <div class="ba" id="ba" style="--pos:50%">
-          <div class="layer before" id="ba-before"></div>
-          <div class="layer after" id="ba-after"></div>
+        <div class="ba" id="ba" style="--pos:62%">
+          <div class="layer before" id="ba-before"><img src="antes-parabrisas.jpg" alt="Parabrisas con manchas de agua y gota seca antes del pulido" width="1000" height="750"></div>
+          <div class="layer after" id="ba-after"><img src="despues-parabrisas.jpg" alt="El mismo parabrisas limpio y transparente después del pulido" width="1000" height="750" loading="eager"></div>
           <span class="tag l">Antes</span><span class="tag r">Después</span>
           <span class="bar"></span>
           <span class="knob"><svg><use href="#i-arrows"/></svg></span>
           <label class="sr" for="ba-range">Deslizá para comparar antes y después</label>
-          <input id="ba-range" type="range" min="0" max="100" value="50">
+          <input id="ba-range" type="range" min="0" max="100" value="62">
         </div>
-        <p class="ba-hint">👆 Deslizá para ver la diferencia</p>
+        <p class="ba-hint">👆 Deslizá para ver la diferencia · trabajo real de GlassStudioCR</p>
       </div>
     </div>
   </section>
@@ -596,8 +596,8 @@ footer a{text-decoration:none}
     if (demoed || matchMedia("(prefers-reduced-motion: reduce)").matches) return; demoed = true;
     var t0 = null, touched = false;
     rng.addEventListener("pointerdown", function(){ touched = true; }, {once:true});
-    function f(t){ if (touched) return; if (!t0) t0 = t; var p = (t - t0)/1800; if (p > 1) { setPos(50); rng.value = 50; return; }
-      var v = 50 + Math.sin(p*Math.PI*2) * 28; setPos(v); rng.value = v; requestAnimationFrame(f); }
+    function f(t){ if (touched) return; if (!t0) t0 = t; var p = (t - t0)/1800; if (p > 1) { setPos(62); rng.value = 62; return; }
+      var v = 62 + Math.sin(p*Math.PI*2) * 26; setPos(v); rng.value = v; requestAnimationFrame(f); }
     requestAnimationFrame(f);
   }
 
