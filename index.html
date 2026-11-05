@@ -175,6 +175,14 @@ header{position:sticky;top:0;z-index:20;background:rgba(7,26,29,.82);backdrop-fi
 .hours div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:8px 0}
 .hours .today{color:var(--glass);font-weight:700}
 
+.quote{margin:0;display:flex;flex-direction:column;gap:20px}
+.quote blockquote{margin:0;font:600 22px/1.35 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
+.quote blockquote::before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:var(--glass);margin-bottom:16px}
+.quote figcaption{display:flex;align-items:center;gap:12px;margin-top:auto}
+.quote figcaption b{display:block}
+.quote small{color:var(--mute);font-size:14px}
+.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(95,224,234,.15);color:var(--glass);font-weight:700}
+
 /* FAQ */
 .faq{display:grid;gap:12px;max-width:820px}
 details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0 22px}
@@ -240,6 +248,7 @@ footer a{text-decoration:none}
       <li><a href="#precios">Precios</a></li>
       <li><a href="#como">Cómo funciona</a></li>
       <li><a href="#zonas">Zonas</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
       <li><a href="#faq">Preguntas</a></li>
     </ul>
     <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar</a>
@@ -409,17 +418,25 @@ footer a{text-decoration:none}
     </div>
   </section>
 
-  <!-- RESEÑAS: se muestra cuando agreguemos reseñas reales de clientes -->
-  <!--
+  <!-- RESEÑAS REALES (comentarios de clientes en Facebook) -->
   <section id="resenas">
     <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Clientes felices</span><h2>Lo que dicen de nosotros</h2></div>
-      <div class="grid g3">
-        <figure class="card"><blockquote>Texto real de la reseña</blockquote><figcaption>Nombre · Zona</figcaption></figure>
+      <div class="sec-head reveal">
+        <span class="eyebrow">Clientes reales</span>
+        <h2>Lo que dicen de nosotros</h2>
+      </div>
+      <div class="grid g2">
+        <figure class="card quote reveal">
+          <blockquote>“Muy buen servicio al cliente, me quedaron como nuevo.”</blockquote>
+          <figcaption><span class="av">G</span><span><b>Grace C.</b><small>Pulido de focos · comentario en Facebook</small></span></figcaption>
+        </figure>
+        <figure class="card quote reveal">
+          <blockquote>“Excelente trabajo 💯 Recomendados y servicio al cliente.”</blockquote>
+          <figcaption><span class="av">A</span><span><b>Alejandro G.</b><small>Comentario en Facebook</small></span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
-  -->
 
   <!-- PREGUNTAS FRECUENTES -->
   <section id="faq">
@@ -429,7 +446,7 @@ footer a{text-decoration:none}
         <h2>Todo lo que necesitás saber</h2>
       </div>
       <div class="faq">
-        <details class="reveal"><summary>¿Tengo que llevar el carro a algún lado?</summary><p>No. Vamos nosotros a tu casa, trabajo o donde lo tengás parqueado, y el traslado es gratis en San José, Heredia y Alajuela.</p></details>
+        <details class="reveal"><summary>¿Dónde están ubicados? ¿Llegan a mi zona?</summary><p>No tenemos local: el servicio es 100 % a domicilio. Vamos a tu casa, trabajo o donde tengás el carro parqueado, y el traslado es gratis en toda la GAM (San José, Heredia y Alajuela).</p></details>
         <details class="reveal"><summary>¿Cuánto dura el servicio?</summary><p>Cada servicio dura unas 2 horas. Al agendar en línea solo te mostramos las horas que tenemos libres.</p></details>
         <details class="reveal"><summary>¿Quita cualquier rayón?</summary><p>Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones. Para rayones profundos, mandanos una foto por WhatsApp y te decimos con honestidad si se puede restaurar antes de que pagués nada.</p></details>
         <details class="reveal"><summary>¿Cuánto dura la protección cerámica?</summary><p>El sellador hace que la lluvia resbale y que el brillo dure meses. Para que te dure más, evitá lavar los vidrios con productos abrasivos.</p></details>
