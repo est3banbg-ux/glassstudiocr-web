@@ -18,7 +18,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1186226080348335');fbq('track','PageView');</script>
 <!-- Ficha para Google (SEO local): así Google entiende qué hacés, dónde y en qué horario -->
@@ -57,513 +57,645 @@
 }
 </script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Dónde están ubicados? ¿Llegan a mi zona?", "acceptedAnswer": {"@type": "Answer", "text": "No tenemos local: el servicio es 100 % a domicilio. Vamos a tu casa, trabajo o donde tengás el carro parqueado, y el traslado es gratis en toda la GAM (San José, Heredia y Alajuela)."}}, {"@type": "Question", "name": "¿Cuánto dura el servicio?", "acceptedAnswer": {"@type": "Answer", "text": "Cada servicio dura unas 2 horas. Al agendar en línea solo te mostramos las horas que tenemos libres."}}, {"@type": "Question", "name": "¿Quita cualquier rayón?", "acceptedAnswer": {"@type": "Answer", "text": "Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones. Para rayones profundos, mandanos una foto por WhatsApp y te decimos con honestidad si se puede restaurar antes de que pagués nada."}}, {"@type": "Question", "name": "¿Cuánto dura la protección cerámica?", "acceptedAnswer": {"@type": "Answer", "text": "El sellador hace que la lluvia resbale y que el brillo dure meses. Para que te dure más, evitá lavar los vidrios con productos abrasivos."}}, {"@type": "Question", "name": "¿Y si mi carro no es ni sedán ni SUV?", "acceptedAnswer": {"@type": "Answer", "text": "Elegí el que más se parezca. Si al llegar el tipo de carro es otro, el precio se ajusta al real, y te lo decimos antes de empezar."}}, {"@type": "Question", "name": "¿También pulen focos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Quitamos lo amarillo y opaco y los sellamos con polímero líquido. Cuesta ₡20 000 el par y lo podés sumar a cualquier servicio de vidrios."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Dónde están ubicados? ¿Llegan a mi zona?", "acceptedAnswer": {"@type": "Answer", "text": "No tenemos local: el servicio es 100 % a domicilio. Vamos a tu casa, trabajo o donde tengás el carro parqueado, y el traslado es gratis en San José, Heredia y Alajuela."}}, {"@type": "Question", "name": "¿Cuánto dura el servicio?", "acceptedAnswer": {"@type": "Answer", "text": "Alrededor de 1 hora por carro. Al agendar en línea solo te mostramos las horas que tenemos libres."}}, {"@type": "Question", "name": "¿Quita cualquier rayón?", "acceptedAnswer": {"@type": "Answer", "text": "Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones. Si un rayón es profundo, lo revisamos antes de empezar y te decimos con honestidad si se puede restaurar."}}, {"@type": "Question", "name": "¿Cuánto dura la protección cerámica?", "acceptedAnswer": {"@type": "Answer", "text": "El sellador hace que la lluvia resbale y que el brillo dure meses. Para que te dure más, evitá lavar los vidrios con productos abrasivos."}}, {"@type": "Question", "name": "¿Y si mi carro no es ni sedán ni SUV?", "acceptedAnswer": {"@type": "Answer", "text": "Elegí el que más se parezca. Si al llegar el tipo de carro es otro, el precio se ajusta al real, y te lo decimos antes de empezar."}}, {"@type": "Question", "name": "¿También pulen focos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Quitamos lo amarillo y opaco y los sellamos con polímero líquido. Cuesta ₡20 000 el par y lo podés sumar a cualquier servicio de vidrios."}}]}</script>
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("m");window.__mt=setTimeout(function(){document.documentElement.classList.remove("m")},2500)}</script>
 <style>
 :root{
-  --bg:#071a1d; --bg2:#0b2428; --card:#0f2c31; --line:#1d444a;
-  --ink:#eaf6f5; --mute:#9dbdbd; --glass:#5fe0ea; --glass2:#2bb3c0;
+  --bg:#04131a; --bg2:#071a1d; --card:#0b2329; --card2:#0f2c31; --line:#1d444a; --hair:rgba(95,224,234,.13);
+  --ink:#eaf6f5; --mute:#9dbdbd; --dim:#6f9396; --glass:#5fe0ea; --glass2:#2bb3c0;
   --cta:#f5b52e; --ctaink:#1b1300; --wa:#25d366; --waink:#04210f;
-  --r:18px; --max:1120px;
+  --ease:cubic-bezier(.23,1,.32,1);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Figtree,system-ui,sans-serif;
-  padding-top:env(safe-area-inset-top,0px);padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Figtree,system-ui,sans-serif;overflow-x:hidden;
+  padding-bottom:calc(84px + env(safe-area-inset-bottom,0px));-webkit-tap-highlight-color:transparent}
 @media (min-width:900px){body{padding-bottom:0}}
+::selection{background:var(--glass);color:#05282c}
+html{scrollbar-color:var(--line) var(--bg)}
+input{caret-color:var(--glass)}
 img,svg{display:block;max-width:100%}
-a{color:inherit}
-h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;letter-spacing:-.02em;margin:0}
-h2{font-size:clamp(30px,5vw,46px);font-weight:800}
-h3{font-size:20px;font-weight:600;letter-spacing:-.01em}
+a{color:inherit;text-underline-offset:.22em}
+button{font:inherit;color:inherit}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,6vw,58px);font-weight:800;line-height:1.02;letter-spacing:-.035em;text-align:center}
+h3{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
 p{margin:0}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--glass)}
-.lead{color:var(--mute);font-size:18px;max-width:60ch}
-.sec-head{display:grid;gap:12px;margin-bottom:36px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px;position:relative}
+section{padding:88px 0;position:relative}
+.sub{color:var(--mute);font-size:18px;max-width:52ch;margin:18px auto 0;text-align:center;text-wrap:pretty}
+.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--glass);outline-offset:3px;border-radius:8px}
+
+/* Cielo de destellos */
+.sky{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
+  background:radial-gradient(1200px 700px at 50% -10%,rgba(43,179,192,.20),transparent 60%),radial-gradient(900px 600px at 100% 60%,rgba(43,179,192,.08),transparent 60%),var(--bg)}
+.sky i{position:absolute;inset:-50%;background-repeat:repeat}
+.sky .s1{background-image:radial-gradient(1px 1px at 20px 30px,rgba(234,246,245,.55),transparent),radial-gradient(1px 1px at 140px 90px,rgba(234,246,245,.4),transparent),radial-gradient(1.5px 1.5px at 260px 170px,rgba(95,224,234,.6),transparent),radial-gradient(1px 1px at 330px 40px,rgba(234,246,245,.35),transparent);background-size:360px 220px;animation:tw 6s ease-in-out infinite alternate}
+.sky .s2{background-image:radial-gradient(1px 1px at 60px 120px,rgba(234,246,245,.45),transparent),radial-gradient(2px 2px at 210px 60px,rgba(95,224,234,.45),transparent),radial-gradient(1px 1px at 300px 200px,rgba(234,246,245,.3),transparent);background-size:420px 260px;animation:tw 9s ease-in-out -3s infinite alternate}
+@keyframes tw{from{opacity:.35}to{opacity:1}}
+
+/* Recuadro de selección (firma visual) */
+.hl{position:relative;display:inline-block;padding:0 .14em;margin:.04em 0;color:var(--ink);white-space:nowrap}
+.hl::before{content:"";position:absolute;inset:-.02em -.02em .04em;border:2px solid var(--glass);border-radius:6px;background:rgba(95,224,234,.10);box-shadow:0 0 24px rgba(95,224,234,.18) inset}
+.hl b{position:absolute;width:.26em;height:.26em;min-width:10px;min-height:10px;border-radius:50%;background:var(--glass);box-shadow:0 0 0 3px var(--bg)}
+.hl b:first-of-type{left:-.1em;top:-.12em}
+.hl b:last-of-type{right:-.1em;bottom:-.06em}
+.hl span{position:relative}
+.dim{color:var(--dim)}
+h2 .dim{display:block}
 
 /* Botones */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:999px;
-  font:700 17px Figtree,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
-.btn:active{transform:scale(.98)}
-.btn:focus-visible,summary:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--glass);outline-offset:3px}
-.btn-cta{background:var(--cta);color:var(--ctaink);box-shadow:0 10px 30px -10px rgba(245,181,46,.6)}
-.btn-cta:hover{box-shadow:0 14px 36px -8px rgba(245,181,46,.75)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:16px;
+  font:700 16.5px Figtree,sans-serif;text-decoration:none;border:0;cursor:pointer;
+  transition:transform 160ms var(--ease),background-color 200ms ease,box-shadow 200ms ease}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-cta{background:var(--cta);color:var(--ctaink);box-shadow:0 6px 18px -8px rgba(0,0,0,.7)}
+.btn-white{background:#fff;color:#04131a}
+.btn-line{background:rgba(11,35,41,.6);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
 .btn-wa{background:var(--wa);color:var(--waink)}
-.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
-.btn-ghost:hover{border-color:var(--glass2)}
-.btn svg{width:22px;height:22px;flex:none}
+@media (hover:hover) and (pointer:fine){
+  .btn-cta:hover{background:#ffc444}
+  .btn-line:hover{box-shadow:inset 0 0 0 1.5px var(--glass2)}
+  .btn:hover .arw{transform:translateX(3px)}
+}
+.arw{transition:transform 200ms var(--ease)}
 
 /* Encabezado */
-header{position:sticky;top:0;z-index:20;background:rgba(7,26,29,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(29,68,74,.6)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+header{position:sticky;top:0;z-index:40;background:rgba(4,19,26,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 20px "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
-.logo b{color:var(--glass)}
-.logo-mark{width:auto;height:44px}
-.logo span{font-weight:800}
-.logo b{font-weight:400;color:var(--ink)}
-.nav ul{display:none;list-style:none;margin:0;padding:0;gap:26px;font-weight:500;color:var(--mute)}
-.nav ul a{text-decoration:none}
-.nav ul a:hover{color:var(--ink)}
-.nav .btn{min-height:44px;padding:0 18px;font-size:15px}
-@media (min-width:900px){.nav ul{display:flex}}
+.logo img{height:36px;width:auto}
+.logo b{font-weight:500}
+.nav .btn{min-height:42px;padding:0 18px;font-size:15px;border-radius:12px}
 
 /* Héroe */
-.hero{padding:40px 0 56px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-30% -10% auto;height:620px;background:radial-gradient(closest-side,rgba(95,224,234,.16),transparent);pointer-events:none}
-.hero-grid{display:grid;gap:34px;align-items:center;position:relative}
-@media (min-width:900px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:56px}.hero{padding:72px 0 88px}}
-.hero h1{font-size:clamp(42px,8vw,76px);font-weight:800;margin:14px 0 18px}
-.hero h1 em{font-style:normal;color:var(--glass);background:linear-gradient(90deg,var(--glass),#c8fbff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero .lead{margin-bottom:26px}
-.ctas{display:flex;flex-wrap:wrap;gap:12px}
-.promo{display:flex;align-items:center;gap:14px;margin:0 0 22px;padding:14px 18px;border-radius:var(--r);text-decoration:none;
-  background:linear-gradient(135deg,#ffe08a,var(--cta));color:var(--ctaink);box-shadow:0 10px 26px rgba(0,0,0,.3);max-width:560px;transition:transform .15s}
-.promo:hover{transform:translateY(-2px)}
-.promo i{font-style:normal;font-size:30px;flex:none}
-.promo b{display:block;font:800 17px/1.2 "Bricolage Grotesque",sans-serif}
-.promo small{display:block;font-size:14px;opacity:.85;margin-top:2px}
-.promo .go{margin-left:auto;font-weight:800;font-size:22px;flex:none}
-.gr{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:22px}
-.gr .stars{color:var(--cta);font-size:20px;letter-spacing:2px}
-.chips{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:26px;color:var(--mute);font-size:15px;list-style:none;padding:0}
-.chips li{display:flex;align-items:center;gap:8px}
-.chips svg{width:18px;height:18px;color:var(--glass)}
-.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--bg2);border:1px solid var(--line)}
-.dot{width:9px;height:9px;border-radius:50%;background:#6b7f80}
-.status.open .dot{background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.18)}
+.hero{padding:56px 0 40px;text-align:center}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--mute);padding:7px 14px;border-radius:999px;background:rgba(11,35,41,.7);box-shadow:inset 0 0 0 1px var(--hair)}
+.dot{width:8px;height:8px;border-radius:50%;background:#6b7f80}
+.status.open{color:var(--ink)}.status.open .dot{background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.18)}
+.hero h1{font-size:clamp(54px,9vw,96px);font-weight:800;line-height:1;letter-spacing:-.045em;margin:24px auto 22px;max-width:12ch}
+.hero h1 .dim{display:block;font-size:.62em;letter-spacing:-.035em;line-height:1.1;margin-bottom:.12em}
+.hero .sub{margin-top:0}
+.hero .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.promo{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;max-width:600px;margin:28px auto 0;padding:16px 18px;border-radius:20px;text-decoration:none;text-align:left;
+  color:var(--ctaink);background:linear-gradient(135deg,#ffe08a,var(--cta) 60%,#f0a614);box-shadow:0 18px 40px -18px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.5);position:relative;overflow:hidden;transition:transform 200ms var(--ease)}
+.promo::after{content:"";position:absolute;top:0;bottom:0;left:-40%;width:30%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg);animation:shine 4.5s ease-in-out 1.5s infinite}
+@keyframes shine{0%{left:-40%}35%,100%{left:130%}}
+.gift-ic{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:rgba(27,19,0,.12)}
+.gift-ic svg{width:28px;height:28px}
+.promo b{display:block;font:800 17px/1.25 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
+.promo small{display:block;font-size:13.5px;opacity:.8;margin-top:4px}
+.promo .go{width:24px;height:24px;transition:transform 200ms var(--ease)}
+@media (hover:hover) and (pointer:fine){.promo:hover{transform:translateY(-2px)}.promo:hover .go{transform:translateX(3px)}}
+.btn-big{min-height:62px;padding:0 30px;font-size:18px;border-radius:18px}
+.ease-note{margin-top:14px;color:var(--mute);font-size:14.5px;text-align:center;text-wrap:balance}
+.ease-note svg{display:inline-block;width:18px;height:18px;color:var(--wa);vertical-align:-4px;margin-right:6px}
 
-/* Slider antes / después */
-.ba{position:relative;aspect-ratio:4/3;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px rgba(0,0,0,.8);user-select:none;touch-action:pan-y;background:#0a1e22}
+/* Marco del antes/después */
+.frame{margin:48px auto 0;max-width:920px;padding:10px;border-radius:30px;background:linear-gradient(180deg,rgba(95,224,234,.22),rgba(95,224,234,.04) 60%);box-shadow:0 40px 90px -40px rgba(0,0,0,.95)}
+.ba{position:relative;aspect-ratio:4/3;border-radius:22px;overflow:hidden;user-select:none;touch-action:pan-y;background:#0a1e22}
+@media (min-width:700px){.ba{aspect-ratio:16/9}}
 .ba .layer{position:absolute;inset:0}
-.ba .layer>*{width:100%;height:100%;object-fit:cover}
+.ba .layer img{width:100%;height:100%;object-fit:cover}
 .ba .after{clip-path:inset(0 0 0 var(--pos,50%))}
-.ba .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
-.ba .knob{position:absolute;top:50%;left:var(--pos,50%);width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:#fff;color:#071a1d;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.45);pointer-events:none}
-.ba .knob svg{width:26px;height:26px}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;margin-left:-1px;background:#fff;pointer-events:none}
+.ba .knob{position:absolute;top:50%;left:var(--pos,50%);width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:#fff;color:#04131a;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.5);pointer-events:none}
+.ba .knob svg{width:24px;height:24px}
 .ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
-.tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:700 13px Figtree,sans-serif;letter-spacing:.06em;text-transform:uppercase;pointer-events:none}
-.tag.l{left:14px;background:rgba(0,0,0,.55);color:#fff}
+.tag{position:absolute;top:14px;padding:6px 12px;border-radius:10px;font:700 12px Figtree,sans-serif;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}
+.tag.l{left:14px;background:rgba(4,19,26,.72);color:#fff}
 .tag.r{right:14px;background:var(--glass);color:#05282c}
-.ba-hint{margin-top:12px;color:var(--mute);font-size:14px;text-align:center}
+.cap{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:14px;color:var(--mute);font-size:14px}
+.cap svg{width:16px;height:16px;color:var(--glass)}
 
-/* Tarjetas */
-.grid{display:grid;gap:16px}
-@media (min-width:640px){.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:900px){.g3{grid-template-columns:repeat(3,1fr)}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(95,224,234,.1);color:var(--glass);margin-bottom:16px}
-.ico svg{width:24px;height:24px}
-.card p{color:var(--mute);margin-top:8px}
-.alt{background:var(--bg2);border-block:1px solid var(--line)}
+/* Datos */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:920px;margin:22px auto 0}
+.stat{padding:20px 10px;border-radius:20px;text-align:center;background:rgba(11,35,41,.7);box-shadow:inset 0 0 0 1px var(--hair)}
+.stat strong{display:block;font:800 clamp(28px,6vw,46px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stat:nth-child(1) strong{color:var(--glass)}
+.stat:nth-child(2) strong{color:var(--wa)}
+.stat > span{display:block;margin-top:8px;font-weight:600;font-size:clamp(13px,2.6vw,16px);line-height:1.3}
+
+/* Marquesina */
+.marq{padding:52px 0 24px;overflow:hidden}
+.marq p{text-align:center;color:var(--mute);font-weight:600;margin-bottom:20px}
+.track{display:flex;gap:12px;width:max-content;animation:mq 34s linear infinite}
+.track span{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:rgba(11,35,41,.7);box-shadow:inset 0 0 0 1px var(--hair);font-weight:700;white-space:nowrap}
+.track svg{width:20px;height:20px;color:var(--glass)}
+.marq-mask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* Síntomas: uno debajo del otro */
+.stack{display:grid;gap:12px;max-width:760px;margin:40px auto 0}
+.sym{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:start;border-radius:22px;padding:20px 22px;background:linear-gradient(180deg,rgba(15,44,49,.9),rgba(11,35,41,.75));box-shadow:inset 0 0 0 1px var(--hair)}
+.sym .ic{grid-row:span 2;width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:rgba(95,224,234,.10);color:var(--glass)}
+.sym .ic svg{width:26px;height:26px}
+.sym h3{margin-top:2px}
+.sym p{color:var(--mute);font-size:15.5px}
 
 /* Restaurar vs cambiar */
-.vs{display:grid;gap:16px}
-@media (min-width:800px){.vs{grid-template-columns:1fr 1fr}}
-.vs .card{padding:28px}
-.vs .win{border-color:var(--glass2);background:linear-gradient(160deg,rgba(95,224,234,.12),var(--card) 60%)}
-.vs ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
-.vs li{display:flex;gap:12px;align-items:flex-start}
-.vs li svg{width:22px;height:22px;flex:none;margin-top:2px}
-.vs .win li svg{color:var(--glass)}
-.vs .lose li svg{color:#d9776b}
-.vs .lose{opacity:.92}
-.pill{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:4px 10px;border-radius:999px;background:var(--glass);color:#05282c;margin-bottom:12px}
+.vs{display:grid;gap:14px;margin-top:44px}
+@media (min-width:800px){.vs{grid-template-columns:1.1fr 1fr}}
+.vsc{border-radius:26px;padding:28px}
+.vsc.win{background:linear-gradient(160deg,rgba(95,224,234,.16),rgba(11,35,41,.85) 55%);box-shadow:inset 0 0 0 1.5px rgba(95,224,234,.5)}
+.vsc.lose{background:rgba(11,35,41,.55);box-shadow:inset 0 0 0 1px var(--hair)}
+.vsc .k{display:inline-block;font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.win .k{background:var(--glass);color:#05282c}
+.lose .k{background:var(--line);color:var(--ink)}
+.vsc ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.vsc li{display:flex;gap:12px}
+.vsc li svg{width:22px;height:22px;flex:none;margin-top:1px}
+.win li svg{color:var(--glass)}
+.lose li{color:var(--mute)}.lose li svg{color:#d9776b}
+
+
+/* Trabajos reales */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:40px}
+.pair figure{margin:0;position:relative;border-radius:22px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 0 0 1px var(--hair),0 30px 60px -30px rgba(0,0,0,.9)}
+.pair img,.car img,.rain img{width:100%;height:100%;object-fit:cover}
+.pair .tag{top:auto;bottom:12px}
+.pair .tag.l{left:12px}.pair .tag.r{left:12px;right:auto}
+.sub-h{font-size:clamp(24px,4.4vw,34px);font-weight:800;letter-spacing:-.03em;text-align:center;margin:64px 0 0}
+.cars{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+@media (min-width:900px){.cars{grid-template-columns:repeat(4,1fr);gap:14px}}
+.car{margin:0;position:relative;border-radius:22px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 0 0 1px var(--hair)}
+.car figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 14px 14px;background:linear-gradient(180deg,transparent,rgba(4,19,26,.92))}
+.car b{display:block;font:800 18px/1.15 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
+.car small{display:block;color:var(--mute);font-size:13px;margin-top:3px}
+@media (hover:hover) and (pointer:fine){.car img{transition:transform 600ms var(--ease)}.car:hover img{transform:scale(1.04)}}
+.rain{margin:14px 0 0;border-radius:26px;overflow:hidden;background:linear-gradient(160deg,rgba(95,224,234,.14),rgba(11,35,41,.9) 55%);box-shadow:inset 0 0 0 1.5px rgba(95,224,234,.4);display:grid}
+.rain-v{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0a1e22}
+.rain-v video{width:100%;height:100%;object-fit:cover;object-position:50% 0;display:block}
+.rain figcaption{padding:22px 22px 24px}
+.rain b{display:block;font:800 clamp(24px,4vw,34px)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.025em}
+.rain small{display:block;color:var(--mute);font-size:16px;margin-top:8px}
+.rain .btn{margin-top:20px;width:100%}
+@media (min-width:800px){.rain{grid-template-columns:minmax(0,380px) 1fr;align-items:center;margin-top:20px}.rain-v{aspect-ratio:9/16}.rain figcaption{padding:40px}.rain .btn{width:auto}}
+
+/* Chat de WhatsApp */
+.chat-grid{display:grid;gap:40px;align-items:center;margin-top:44px}
+@media (min-width:900px){.chat-grid{grid-template-columns:1fr 1fr}}
+.phone{width:min(100%,340px);margin:0 auto;border-radius:40px;padding:12px;background:#0d1b20;box-shadow:inset 0 0 0 1px #24434a,0 40px 80px -30px rgba(0,0,0,.9)}
+.screen{border-radius:30px;overflow:hidden;background:#0b141a}
+.bk{background:#f4fbfb;color:#0b2329}
+.bk-top{display:flex;align-items:center;gap:10px;padding:14px 16px;background:#071a1d;color:var(--ink)}
+.bk-top img{width:30px;height:30px;object-fit:contain}
+.bk-body{padding:14px 14px 18px;min-height:440px;display:flex;flex-direction:column;gap:8px}
+.bk-l{font-size:12px;font-weight:700;color:#4d6b6e;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}
+.bk-opt{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px #d4e6e7;font-weight:600;font-size:14.5px;transition:box-shadow 250ms ease,background-color 250ms ease}
+.bk-days{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.bk-days span{display:grid;place-items:center;padding:8px 0;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1.5px #d4e6e7;font-size:11px;font-weight:600;color:#4d6b6e;transition:all 250ms ease}
+.bk-days b{font-size:17px;color:#0b2329}
+.bk-hours{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.bk-hours span{text-align:center;padding:10px 0;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1.5px #d4e6e7;font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;transition:all 250ms ease}
+.bk .on{background:#e3fafb!important;box-shadow:inset 0 0 0 2px var(--glass2)!important}
+.bk-days span.on b,.bk-days span.on{color:#05282c}
+.bk-btn{margin-top:auto;text-align:center;padding:14px;border-radius:14px;background:var(--cta);color:var(--ctaink);font-weight:800;transition:transform 160ms var(--ease)}
+.bk-btn.on{transform:scale(.97);background:var(--cta)!important;box-shadow:none!important}
+.bk-ok{display:none;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:16px;border-radius:16px;background:#e5f9ec}
+.bk-ok svg{width:38px;height:38px;color:#fff;background:var(--wa);border-radius:50%;padding:8px}
+.bk-ok b{font-size:17px;margin-top:6px}.bk-ok small{color:#4d6b6e}
+.bk-ok.on{display:flex;background:#e5f9ec!important;box-shadow:none!important}
+.note-ill{text-align:center;color:var(--dim);font-size:13px;margin-top:12px}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:28px;position:relative}
+.flow::before{content:"";position:absolute;left:10%;right:10%;top:27px;height:1px;background:var(--line)}
+.flow div{position:relative;text-align:center;font-size:13px;font-weight:600;color:var(--mute)}
+.flow span{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 8px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line);color:var(--glass)}
+.flow div.on span{box-shadow:inset 0 0 0 1.5px var(--glass);background:#06232a}
+.flow div.on{color:var(--ink)}
+.flow svg{width:24px;height:24px}
+.chat-copy h2{text-align:left}
+@media (max-width:899px){.chat-copy h2,.chat-copy .sub{text-align:center}}
+@media (min-width:900px){.chat-copy .sub{margin-left:0;text-align:left}}
+.chat-copy .btn{margin-top:28px}
+@media (max-width:899px){.chat-copy{text-align:center}}
 
 /* Precios */
-.toggle{display:inline-flex;padding:5px;border-radius:999px;background:var(--bg);border:1px solid var(--line);margin-bottom:24px}
-.toggle button{font:700 15px Figtree,sans-serif;color:var(--mute);background:none;border:0;padding:10px 18px;border-radius:999px;cursor:pointer;min-height:44px}
-.toggle button[aria-pressed="true"]{background:var(--glass);color:#05282c}
-.price{display:flex;flex-direction:column}
-.price .amt{font:800 40px "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin:14px 0 2px}
-.price .amt small{font:500 15px Figtree,sans-serif;color:var(--mute);letter-spacing:0}
-.price ul{list-style:none;padding:0;margin:14px 0 22px;display:grid;gap:8px;color:var(--mute);font-size:15px}
-.price li::before{content:"✓";color:var(--glass);font-weight:700;margin-right:8px}
-.price .btn{margin-top:auto;width:100%}
-.price.best{border-color:var(--cta);position:relative}
-.price.best .flag{position:absolute;top:-13px;left:24px;background:var(--cta);color:var(--ctaink);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
-.note{margin-top:18px;color:var(--mute);font-size:15px}
+.toggle{position:relative;display:grid;grid-template-columns:1fr 1fr;padding:4px;border-radius:16px;background:rgba(11,35,41,.8);box-shadow:inset 0 0 0 1px var(--line);width:min(100%,380px);margin:30px auto 0}
+.toggle .pill{position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:12px;background:var(--glass);transition:transform 280ms var(--ease)}
+.toggle[data-vt="suv"] .pill{transform:translateX(100%)}
+.toggle button{position:relative;font-weight:700;font-size:15px;color:var(--mute);background:none;border:0;min-height:46px;border-radius:12px;cursor:pointer;transition:color 200ms ease}
+.toggle button[aria-pressed="true"]{color:#05282c}
+.plans{display:grid;gap:14px;margin-top:28px}
+@media (min-width:900px){.plans{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.plan{display:flex;flex-direction:column;border-radius:26px;padding:28px;background:rgba(11,35,41,.75);box-shadow:inset 0 0 0 1px var(--hair)}
+.plan.best{background:linear-gradient(180deg,rgba(245,181,46,.12),rgba(11,35,41,.85) 45%);box-shadow:inset 0 0 0 1.5px rgba(245,181,46,.55)}
+.plan .lbl{font-size:13px;font-weight:700;color:var(--cta);margin-bottom:8px;min-height:18px}
+.amt{font:800 50px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.04em;margin:16px 0 0;font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:8px}
+.amt small{font:500 15px Figtree,sans-serif;color:var(--mute);letter-spacing:0}
+.plan ul{list-style:none;padding:0;margin:20px 0 26px;display:grid;gap:10px;color:var(--mute);font-size:15.5px}
+.plan li{display:flex;gap:10px}
+.plan li svg{width:18px;height:18px;color:var(--glass);flex:none;margin-top:3px}
+.plan .btn{margin-top:auto;width:100%}
+.fine{text-align:center;color:var(--mute);font-size:15px;margin-top:20px}
 
 /* Pasos */
-.steps{counter-reset:s;display:grid;gap:16px}
-@media (min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
-.step{position:relative;padding-top:64px}
-.step::before{counter-increment:s;content:counter(s);position:absolute;top:22px;left:24px;font:800 30px "Bricolage Grotesque",sans-serif;color:var(--glass)}
+.steps{display:grid;gap:26px;margin-top:48px;list-style:none;padding:0;counter-reset:s}
+@media (min-width:800px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps li{text-align:center;position:relative}
+.steps .n{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 16px;border-radius:50%;background:var(--glass);color:#05282c;font:800 22px "Bricolage Grotesque",sans-serif;box-shadow:0 0 0 6px rgba(43,179,192,.16)}
+.steps p{color:var(--mute);margin-top:8px;font-size:16px;max-width:30ch;margin-inline:auto}
 
 /* Zonas */
-.zones{display:grid;gap:28px;align-items:center}
-@media (min-width:900px){.zones{grid-template-columns:1fr 1fr}}
-.zl{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
-.zl a{text-decoration:none}.zl a:hover{border-color:var(--glass)}.zl span,.zl a{padding:10px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:600}
-.hours{display:grid;gap:8px;max-width:380px}
-.hours div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:8px 0}
-.hours .today{color:var(--glass);font-weight:700}
+.zones{display:grid;gap:12px;margin-top:40px}
+@media (min-width:800px){.zones{grid-template-columns:repeat(3,1fr)}}
+.zone{border-radius:24px;padding:24px;background:rgba(11,35,41,.75);box-shadow:inset 0 0 0 1px var(--hair)}
+.zone .fee{font:800 30px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.zone.free .fee{color:var(--wa)}
+.zone p{color:var(--mute);margin-top:10px;font-size:15.5px}
+.zone b{color:var(--ink)}
+.hours{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}
+.hours span{padding:10px 16px;border-radius:12px;background:rgba(11,35,41,.75);box-shadow:inset 0 0 0 1px var(--hair);font-weight:600;font-size:15px}
+.hours span.today{box-shadow:inset 0 0 0 1.5px var(--glass);color:var(--glass)}
 
-.quote{margin:0;display:flex;flex-direction:column;gap:20px}
-.quote blockquote{margin:0;font:600 22px/1.35 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
-.quote blockquote::before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:var(--glass);margin-bottom:16px}
-.quote figcaption{display:flex;align-items:center;gap:12px;margin-top:auto}
-.quote figcaption b{display:block}
-.quote small{color:var(--mute);font-size:14px}
-.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(95,224,234,.15);color:var(--glass);font-weight:700}
+/* Reseñas */
+.revs{display:grid;gap:14px;margin-top:40px}
+@media (min-width:800px){.revs{grid-template-columns:repeat(2,1fr)}}
+.rv{margin:0;border-radius:24px;padding:26px;background:rgba(11,35,41,.75);box-shadow:inset 0 0 0 1px var(--hair)}
+.rv blockquote{margin:0;font:700 22px/1.3 "Bricolage Grotesque",sans-serif;letter-spacing:-.015em}
+.rv figcaption{display:flex;align-items:center;gap:12px;margin-top:18px;color:var(--mute);font-size:14px}
+.rv figcaption b{display:block;color:var(--ink);font-size:15px}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(95,224,234,.14);color:var(--glass);font-weight:700}
+.stars{display:flex;gap:2px;color:var(--cta);margin-bottom:14px}
+.stars svg{width:16px;height:16px}
+.greview{text-align:center;margin-top:26px}
 
 /* FAQ */
-.faq{display:grid;gap:12px;max-width:820px}
-details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0 22px}
-summary{cursor:pointer;list-style:none;padding:20px 30px 20px 0;font-weight:700;font-size:18px;position:relative}
+.faq{max-width:760px;margin:40px auto 0;display:grid;gap:10px}
+details{border-radius:18px;background:rgba(11,35,41,.75);box-shadow:inset 0 0 0 1px var(--hair)}
+summary{cursor:pointer;list-style:none;padding:20px 60px 20px 22px;font-weight:700;font-size:17px;position:relative}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";position:absolute;right:0;top:16px;font-size:26px;color:var(--glass);transition:transform .2s}
+summary::after{content:"";position:absolute;right:20px;top:50%;width:26px;height:26px;margin-top:-13px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--line);
+  background:linear-gradient(var(--ink),var(--ink)) center/11px 2px no-repeat,linear-gradient(var(--ink),var(--ink)) center/2px 11px no-repeat;transition:transform 240ms var(--ease)}
 details[open] summary::after{transform:rotate(45deg)}
-details p{color:var(--mute);padding:0 0 20px}
+details p{color:var(--mute);padding:0 22px 20px;overflow:hidden}
 
-/* CTA final */
-.final{text-align:center;background:radial-gradient(ellipse at top,rgba(95,224,234,.18),transparent 60%),var(--bg2);border-top:1px solid var(--line)}
-.final h2{max-width:16ch;margin:0 auto 16px}
-.final .lead{margin:0 auto 28px}
-.final .ctas{justify-content:center}
+/* Cierre */
+.final{text-align:center;padding-bottom:110px}
+.final .badge{width:92px;height:92px;margin:0 auto 26px;border-radius:28px;display:grid;place-items:center;background:linear-gradient(160deg,rgba(95,224,234,.25),rgba(11,35,41,.9));box-shadow:inset 0 0 0 1.5px rgba(95,224,234,.5),0 20px 50px -20px rgba(0,0,0,.8)}
+.final .badge img{width:64px}
+.final .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:560px;margin:44px auto 0;list-style:none;padding:0}
+.mini li{font-size:14px;font-weight:600;color:var(--mute)}
+.mini span{display:grid;place-items:center;width:40px;height:40px;margin:0 auto 10px;border-radius:50%;background:var(--glass);color:#05282c;font:800 16px "Bricolage Grotesque",sans-serif}
 
-footer{padding:40px 0;color:var(--mute);font-size:15px;border-top:1px solid var(--line)}
-footer .wrap{display:grid;gap:18px}
-@media (min-width:800px){footer .wrap{grid-template-columns:2fr 1fr 1fr}}
-@media (min-width:1000px){footer .wrap{grid-template-columns:1.6fr 1fr 1fr 1.3fr 1.5fr}}
-footer nav a{line-height:1.9}
-footer h4{margin:0 0 8px;color:var(--ink);font-size:15px}
+footer{padding:40px 0;border-top:1px solid var(--hair);color:var(--mute);font-size:14.5px}
 footer a{text-decoration:none}
+.foot{display:grid;gap:28px}
+@media (min-width:800px){.foot{grid-template-columns:1.4fr 1fr 1fr}}
+.foot p{margin-top:12px;max-width:36ch}
+.foot nav a{display:block;line-height:2}
+.foot h4{margin:0 0 8px;color:var(--ink);font-size:14px}
+@media (hover:hover) and (pointer:fine){footer a:hover{color:var(--ink)}}
 
-/* Barra fija en celular */
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,26,29,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
-.mbar .btn{min-height:52px;padding:0 10px;font-size:16px}
+/* Barra fija */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,transparent,rgba(4,19,26,.92) 30%)}
+.mbar .btn{flex:1;min-height:54px}
+.mbar .btn-wa{flex:0 0 54px;padding:0}
+.mbar .btn-wa svg{width:28px;height:28px}
 @media (min-width:900px){.mbar{display:none}}
-.fab{display:none}
-@media (min-width:900px){.fab{display:grid;place-items:center;position:fixed;right:24px;bottom:24px;z-index:30;width:62px;height:62px;border-radius:50%;background:var(--wa);color:var(--waink);box-shadow:0 12px 30px -8px rgba(37,211,102,.6)}.fab svg{width:32px;height:32px}}
 
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.m [data-in],.m .hero-in>*{opacity:0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sky i,.track,.promo::after{animation:none!important}*{transition-duration:0ms!important}}
 </style>
 </head>
 <body>
+<div class="sky" aria-hidden="true"><i class="s1"></i><i class="s2"></i></div>
 
-<!-- Íconos reutilizables -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
-  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
-  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke-linecap="round"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></symbol>
-  <symbol id="i-wiper" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20 18 6"/><path d="M3 20h4"/><path d="M7 15c3-1 6 0 9 3"/></symbol>
-  <symbol id="i-rain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 15a4 4 0 0 1 .5-8 5.5 5.5 0 0 1 10.5 1.5A3.5 3.5 0 0 1 17 15z"/><path d="m8 18-1 2.5M12 18l-1 2.5M16 18l-1 2.5"/></symbol>
-  <symbol id="i-scratch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9l6-5M5 15 15 5M9 20 20 9M15 20l5-4"/></symbol>
-  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 6 0 0 1 9-6h3a6 6 0 0 1 0 12h-3a9 6 0 0 1-9-6z"/><path d="M15 9v6"/></symbol>
-  <symbol id="i-cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7 7 17"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
   <symbol id="i-arrows" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12M11 11.5v-1a1.5 1.5 0 0 1 3 0V12M14 11a1.5 1.5 0 0 1 3 0v1M17 11.5a1.5 1.5 0 0 1 3 0V16a6 6 0 0 1-6 6h-1.5a6 6 0 0 1-4.6-2.2L5 16.5a1.6 1.6 0 0 1 2.4-2.1L8 15"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v7h14v-7M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9.5 8 12 8Zm0 0c1.5-3 5-3.5 5-1.2C17 8 14.5 8 12 8Z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3L2.9 9.4l6.3-.8z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-glare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></symbol>
+  <symbol id="i-rain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 15a4 4 0 0 1 .5-8 5.5 5.5 0 0 1 10.5 1.5A3.5 3.5 0 0 1 17 15z"/><path d="m8 18-1 2.5M12 18l-1 2.5M16 18l-1 2.5"/></symbol>
+  <symbol id="i-wiper" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20 18 6"/><path d="M3 20h4"/><path d="M7 15c3-1 6 0 9 3"/></symbol>
+  <symbol id="i-scratch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 9l6-5M5 15 15 5M9 20 20 9M15 20l5-4"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 6 0 0 1 9-6h3a6 6 0 0 1 0 12h-3a9 6 0 0 1-9-6z"/><path d="M15 9v6M19 9.5v5"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5" stroke-linecap="round"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16H3v-4l2-5h10l4 5h2v4h-2"/><circle cx="7.5" cy="16.5" r="2"/><circle cx="16.5" cy="16.5" r="2"/><path d="M9.5 16.5h5"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V8h11v8M14 11h4l3 3v2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></symbol>
+  <symbol id="i-windows" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 11 7 5h10l3 6z"/><path d="M4 11v6h16v-6M8 11V5.5M16 11V5.5"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 15c3-6 15-6 18 0z"/></symbol>
 </svg>
 
 <header>
   <nav class="wrap nav" aria-label="Principal">
-    <a class="logo" href="#inicio" aria-label="GlassStudioCR, inicio">
-      <img class="logo-mark" src="logo-icon.png" alt="" width="397" height="314">
-      <span>GlassStudio<b>CR</b></span>
-    </a>
-    <ul>
-      <li><a href="#sintomas">Problemas</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#como">Cómo funciona</a></li>
-      <li><a href="#zonas">Zonas</a></li>
-      <li><a href="#resenas">Reseñas</a></li>
-      <li><a href="#faq">Preguntas</a></li>
-    </ul>
-    <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar</a>
+    <a class="logo" href="#inicio" aria-label="GlassStudioCR, inicio"><img src="logo-icon.png" alt="" width="120" height="95"><span>GlassStudio<b>CR</b></span></a>
+    <a class="btn btn-white js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar</a>
   </nav>
 </header>
 
 <main id="inicio">
-  <!-- HÉROE -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
+    <div class="wrap">
+      <div class="hero-in">
         <span class="status" id="status"><span class="dot"></span><span id="status-t">Lun a sáb 6 am – 4 pm · Dom 8 am – 3 pm</span></span>
-        <h1>No cambiés tu parabrisas. <em>Restauralo.</em></h1>
-        <p class="lead">Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones de tus vidrios y focos. Llegamos a tu casa o trabajo en la GAM y te lo dejamos como de fábrica, por una fracción de lo que cuesta cambiarlo.</p>
-        <a class="promo js-book" href="https://citas.glassstudiocr.com/reservar/"><i>🎁</i><span><b>Promo: agendá en línea tu parabrisas y te regalamos el vidrio trasero y los retrovisores</b><small>Sedán o SUV, mismo regalo · solo agendando desde la página</small></span><span class="go">→</span></a>
+        <h1><span class="dim">No cambiés tu parabrisas.</span><span class="hl" data-hl><b></b><span>Restauralo.</span><b></b></span></h1>
+        <p class="sub">Quitamos gota seca, lluvia ácida, hongos y micro rayones de tus vidrios y focos. Vamos a tu casa o trabajo y lo dejamos como de fábrica.</p>
+        <a class="promo js-book" href="https://citas.glassstudiocr.com/reservar/">
+          <span class="gift-ic"><svg aria-hidden="true"><use href="#i-gift"/></svg></span>
+          <span><b>Promo: agendá en línea tu parabrisas y te regalamos el vidrio trasero y los retrovisores</b><small>Sedán o SUV, mismo regalo · solo agendando desde la página</small></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
         <div class="ctas">
-          <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/"><svg><use href="#i-cal"/></svg>Agendar en 1 minuto</a>
-          <a class="btn btn-ghost js-wa" data-msg="¡Hola GlassStudioCR! Quiero cotizar. Les mando una foto de mi vidrio:" href="https://wa.me/50670892537"><svg style="color:var(--wa)"><use href="#i-wa"/></svg>Cotizar con una foto</a>
+          <a class="btn btn-cta btn-big js-book" href="https://citas.glassstudiocr.com/reservar/"><svg aria-hidden="true"><use href="#i-cal"/></svg>Agendar en 1 minuto <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
-        <ul class="chips">
-          <li><svg><use href="#i-home"/></svg>Domicilio gratis en la GAM</li>
-          <li><svg><use href="#i-shield"/></svg>Protección cerámica incluida</li>
-          <li><svg><use href="#i-clock"/></svg>Listo en unas 2 horas</li>
-        </ul>
+        <p class="ease-note"><svg aria-hidden="true"><use href="#i-check"/></svg>Elegís servicio, día y hora. Sin llamadas ni mensajes.</p>
       </div>
 
-      <div class="reveal">
-        <!--
-          SLIDER ANTES / DESPUÉS
-          Para poner tus fotos reales: cambiá cada <svg>…</svg> de abajo por
-          <img src="antes.jpg" alt="Parabrisas con gota seca antes del pulido">  (capa "before")
-          <img src="despues.jpg" alt="El mismo parabrisas después del pulido">   (capa "after")
-          Usá dos fotos del MISMO carro, desde el MISMO ángulo y con la misma luz.
-        -->
+      <div class="frame" data-in>
         <div class="ba" id="ba" style="--pos:62%">
-          <div class="layer before" id="ba-before"><img src="antes-parabrisas.jpg" alt="Parabrisas con manchas de agua y gota seca antes del pulido" width="1000" height="750"></div>
-          <div class="layer after" id="ba-after"><img src="despues-parabrisas.jpg" alt="El mismo parabrisas limpio y transparente después del pulido" width="1000" height="750" loading="eager"></div>
+          <div class="layer before"><img src="antes-parabrisas.webp" alt="Parabrisas con manchas de agua y gota seca antes del pulido" width="1000" height="750" fetchpriority="high"></div>
+          <div class="layer after"><img src="despues-parabrisas.webp" alt="El mismo parabrisas limpio y transparente después del pulido" width="1000" height="750"></div>
           <span class="tag l">Antes</span><span class="tag r">Después</span>
           <span class="bar"></span>
-          <span class="knob"><svg><use href="#i-arrows"/></svg></span>
+          <span class="knob"><svg aria-hidden="true"><use href="#i-arrows"/></svg></span>
           <label class="sr" for="ba-range">Deslizá para comparar antes y después</label>
           <input id="ba-range" type="range" min="0" max="100" value="62">
         </div>
-        <p class="ba-hint">👆 Deslizá para ver la diferencia · trabajo real de GlassStudioCR</p>
+      </div>
+      <p class="cap"><svg aria-hidden="true"><use href="#i-hand"/></svg>Deslizá · trabajo real de GlassStudioCR</p>
+
+      <div class="stats">
+        <div class="stat" data-in><strong><span data-count="20000" data-fmt="crc">₡20 000</span></strong><span>precio desde</span></div>
+        <div class="stat" data-in><strong><span data-count="0" data-fmt="crc">₡0</span></strong><span>de traslado en la GAM</span></div>
+        <div class="stat" data-in><strong><span data-count="7">7</span></strong><span>días a la semana</span></div>
       </div>
     </div>
   </section>
 
-  <!-- SÍNTOMAS -->
-  <section class="alt" id="sintomas">
+  <div class="marq" aria-label="Lo que eliminamos">
+    <p>Lo que eliminamos de tus vidrios</p>
+    <div class="marq-mask">
+      <div class="track">
+        <span><svg aria-hidden="true"><use href="#i-drop"/></svg>Gota seca</span><span><svg aria-hidden="true"><use href="#i-rain"/></svg>Lluvia ácida</span><span><svg aria-hidden="true"><use href="#i-spark"/></svg>Hongos</span><span><svg aria-hidden="true"><use href="#i-scratch"/></svg>Micro rayones</span><span><svg aria-hidden="true"><use href="#i-bulb"/></svg>Focos amarillos</span><span><svg aria-hidden="true"><use href="#i-wiper"/></svg>Escobillas que brincan</span><span><svg aria-hidden="true"><use href="#i-glare"/></svg>Destellos de noche</span>
+        <span aria-hidden="true"><svg><use href="#i-drop"/></svg>Gota seca</span><span aria-hidden="true"><svg><use href="#i-rain"/></svg>Lluvia ácida</span><span aria-hidden="true"><svg><use href="#i-spark"/></svg>Hongos</span><span aria-hidden="true"><svg><use href="#i-scratch"/></svg>Micro rayones</span><span aria-hidden="true"><svg><use href="#i-bulb"/></svg>Focos amarillos</span><span aria-hidden="true"><svg><use href="#i-wiper"/></svg>Escobillas que brincan</span><span aria-hidden="true"><svg><use href="#i-glare"/></svg>Destellos de noche</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="sintomas">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">¿Tu carro tiene alguno de estos síntomas?</span>
-        <h2>Si te pasa esto, tu vidrio necesita una restauración</h2>
-        <p class="lead">El lavado normal no los quita: son minerales y daños incrustados en los poros del vidrio.</p>
-      </div>
-      <div class="grid g3">
-        <article class="card reveal"><div class="ico"><svg><use href="#i-drop"/></svg></div><h3>Gota seca y manchas que no salen</h3><p>Puntos blancos de agua y minerales pegados al vidrio. Ni con jabón ni con limpiavidrios se van.</p></article>
-        <article class="card reveal"><div class="ico"><svg><use href="#i-moon"/></svg></div><h3>Ves borroso de noche</h3><p>La lluvia ácida dispersa la luz de los otros carros y crea destellos que te encandilan.</p></article>
-        <article class="card reveal"><div class="ico"><svg><use href="#i-rain"/></svg></div><h3>Cuando llueve no ves nada</h3><p>El agua se queda pegada en vez de resbalar y pierdes visibilidad justo cuando más la necesitás.</p></article>
-        <article class="card reveal"><div class="ico"><svg><use href="#i-wiper"/></svg></div><h3>Las escobillas brincan o suenan</h3><p>Si chillan o saltan, la superficie ya no es lisa. Hay que descontaminar el vidrio.</p></article>
-        <article class="card reveal"><div class="ico"><svg><use href="#i-scratch"/></svg></div><h3>Micro rayones y hongos</h3><p>Las marcas finas de las escobillas y los hongos opacan el vidrio y se notan con el sol.</p></article>
-        <article class="card reveal"><div class="ico"><svg><use href="#i-bulb"/></svg></div><h3>Focos amarillos u opacos</h3><p>Iluminan menos y hacen ver el carro viejo. Los pulimos y sellamos con polímero líquido.</p></article>
+      <h2 data-in><span class="dim">¿Tu vidrio</span><span class="hl" data-hl><b></b><span>hace esto?</span><b></b></span></h2>
+      <p class="sub" data-in>El lavado normal no lo quita: son minerales y daños incrustados en los poros del vidrio.</p>
+      <div class="stack">
+        <article class="sym" data-in><span class="ic"><svg aria-hidden="true"><use href="#i-drop"/></svg></span><h3>Gota seca que no sale</h3><p>Puntos blancos de agua y minerales pegados. Ni con jabón ni con limpiavidrios se van.</p></article>
+        <article class="sym" data-in><span class="ic"><svg aria-hidden="true"><use href="#i-glare"/></svg></span><h3>Ves borroso de noche</h3><p>La lluvia ácida dispersa la luz de los otros carros y te encandila.</p></article>
+        <article class="sym" data-in><span class="ic"><svg aria-hidden="true"><use href="#i-rain"/></svg></span><h3>Con lluvia no ves nada</h3><p>El agua se queda pegada en vez de resbalar, justo cuando más necesitás ver.</p></article>
+        <article class="sym" data-in><span class="ic"><svg aria-hidden="true"><use href="#i-wiper"/></svg></span><h3>Escobillas que brincan</h3><p>Si chillan o saltan, la superficie ya no es lisa. Hay que descontaminar el vidrio.</p></article>
+        <article class="sym" data-in><span class="ic"><svg aria-hidden="true"><use href="#i-scratch"/></svg></span><h3>Micro rayones y hongos</h3><p>Marcas finas y hongos que opacan el vidrio y se notan con el sol.</p></article>
+        <article class="sym" data-in><span class="ic"><svg aria-hidden="true"><use href="#i-bulb"/></svg></span><h3>Focos amarillos</h3><p>Iluminan menos y hacen ver el carro viejo. Los pulimos y sellamos con polímero líquido.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- RESTAURAR VS CAMBIAR -->
   <section>
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">La decisión inteligente</span>
-        <h2>Restaurar vs. cambiar el vidrio</h2>
-      </div>
+      <h2 data-in><span class="dim">No lo cambiés,</span><span class="hl" data-hl><b></b><span>restauralo.</span><b></b></span></h2>
       <div class="vs">
-        <div class="card win reveal">
-          <span class="pill">GlassStudioCR</span>
+        <div class="vsc win" data-in>
+          <span class="k">GlassStudioCR</span>
           <h3>Restaurar tu vidrio</h3>
           <ul>
-            <li><svg><use href="#i-check"/></svg><span><b>Desde ₡20 000</b>, con protección cerámica incluida</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Unas <b>2 horas</b>, donde está tu carro</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Conservás el vidrio y el sellado originales de fábrica</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Sin esperar repuestos ni dejar el carro en un taller</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><b class="num">Desde ₡20 000</b>, con protección cerámica incluida</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Lo hacemos donde está tu carro</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Conservás el vidrio y el sellado originales</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sin esperar repuestos ni dejar el carro en un taller</span></li>
           </ul>
         </div>
-        <div class="card lose reveal">
-          <span class="pill" style="background:var(--line);color:var(--ink)">La otra opción</span>
+        <div class="vsc lose" data-in>
+          <span class="k">La otra opción</span>
           <h3>Cambiar el parabrisas</h3>
           <ul>
-            <li><svg><use href="#i-x"/></svg><span>Cuesta mucho más: vidrio nuevo más instalación</span></li>
-            <li><svg><use href="#i-x"/></svg><span>Hay que llevar el carro al taller y esperar</span></li>
-            <li><svg><use href="#i-x"/></svg><span>Se rompe el sellado original de fábrica</span></li>
-            <li><svg><use href="#i-x"/></svg><span>Muchas veces el vidrio solo tenía manchas y se podía salvar</span></li>
+            <li><svg aria-hidden="true"><use href="#i-no"/></svg><span>Cuesta mucho más: vidrio nuevo más instalación</span></li>
+            <li><svg aria-hidden="true"><use href="#i-no"/></svg><span>Hay que llevar el carro al taller y esperar</span></li>
+            <li><svg aria-hidden="true"><use href="#i-no"/></svg><span>Se rompe el sellado original de fábrica</span></li>
+            <li><svg aria-hidden="true"><use href="#i-no"/></svg><span>Muchas veces el vidrio solo tenía manchas</span></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRECIOS -->
-  <section class="alt" id="precios">
+  <section id="trabajos">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Precios claros, sin sorpresas</span>
-        <h2>Elegí tu carro y mirá el precio exacto</h2>
+      <h2 data-in><span class="dim">Trabajos</span><span class="hl" data-hl><b></b><span>reales.</span><b></b></span></h2>
+      <p class="sub" data-in>Fotos de nuestros propios trabajos, carro por carro.</p>
+      <div class="pair">
+        <figure data-in><img src="antes-2.webp" alt="Parabrisas opaco con gota seca antes del pulido" width="800" height="1067" loading="lazy"><span class="tag l">Antes</span></figure>
+        <figure data-in><img src="despues-2.webp" alt="El mismo parabrisas transparente después del pulido" width="800" height="1067" loading="lazy"><span class="tag r">Después</span></figure>
       </div>
-      <div class="toggle" role="group" aria-label="Tipo de carro">
+
+      <h3 class="sub-h" data-in>Carros que ya pasaron por nuestras manos</h3>
+      <div class="cars">
+        <figure class="car" data-in><img src="car-jeep.webp" alt="Jeep clásico preparado, azul, atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Jeep clásico</b><small>Preparado para off-road</small></figcaption></figure>
+        <figure class="car" data-in><img src="car-raptor.webp" alt="Ford Raptor gris atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Ford Raptor</b><small>SVT</small></figcaption></figure>
+        <figure class="car" data-in><img src="car-mercedes.webp" alt="Mercedes-Benz clásico azul atendido por GlassStudioCR" width="800" height="987" loading="lazy"><figcaption><b>Mercedes-Benz</b><small>Clásico</small></figcaption></figure>
+        <figure class="car" data-in><img src="car-350z.webp" alt="Nissan 350Z negro atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Nissan 350Z</b><small>Deportivo</small></figcaption></figure>
+      </div>
+
+      <figure class="rain" data-in>
+        <div class="rain-v"><video src="ceramico.mp4" poster="ceramico-poster.webp" muted loop playsinline autoplay preload="metadata" aria-label="Le tiran agua al parabrisas con protección cerámica y el agua resbala sin quedarse pegada" width="478" height="850"></video></div>
+        <figcaption><b>Con protección cerámica, la lluvia resbala.</b><small>El agua se hace gotas y se va sola, en vez de quedarse pegada.</small><a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/"><svg aria-hidden="true"><use href="#i-cal"/></svg>Agendar con cerámico <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="agendar">
+    <div class="wrap chat-grid">
+      <div class="chat-copy">
+        <h2 data-in><span class="dim">Agendá en</span><span class="hl" data-hl><b></b><span>1 minuto.</span><b></b></span></h2>
+        <p class="sub" data-in>Sin escribir ni esperar respuesta: elegís tu servicio, el día y la hora libre, y listo. Te llega la confirmación.</p>
+        <div class="flow" id="flow" data-in>
+          <div><span><svg aria-hidden="true"><use href="#i-tag"/></svg></span>Servicio</div>
+          <div><span><svg aria-hidden="true"><use href="#i-cal"/></svg></span>Día</div>
+          <div><span><svg aria-hidden="true"><use href="#i-clock"/></svg></span>Hora</div>
+          <div><span><svg aria-hidden="true"><use href="#i-pin"/></svg></span>Dirección</div>
+          <div><span><svg aria-hidden="true"><use href="#i-check"/></svg></span>¡Listo!</div>
+        </div>
+        <a class="btn btn-cta btn-big js-book" data-in href="https://citas.glassstudiocr.com/reservar/"><svg aria-hidden="true"><use href="#i-cal"/></svg>Agendar en 1 minuto <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div data-in>
+        <div class="phone">
+          <div class="screen bk" id="bk">
+            <div class="bk-top"><img src="logo-icon.png" alt="" width="34" height="34"><b>Reservar cita</b></div>
+            <div class="bk-body">
+              <p class="bk-l">Servicio</p>
+              <div class="bk-opt" data-s="0"><span>Parabrisas + cerámico</span><b class="num">₡20 000</b></div>
+              <div class="bk-opt" data-s="0x"><span>Todos los vidrios</span><b class="num">₡40 000</b></div>
+              <p class="bk-l">Día</p>
+              <div class="bk-days"><span>L<b>10</b></span><span>M<b>11</b></span><span data-s="1">M<b>12</b></span><span>J<b>13</b></span><span>V<b>14</b></span></div>
+              <p class="bk-l">Hora libre</p>
+              <div class="bk-hours"><span>7:00</span><span data-s="2">8:00</span><span>10:00</span><span>1:00</span></div>
+              <div class="bk-btn" data-s="3">Confirmar cita</div>
+              <div class="bk-ok" data-s="4"><svg aria-hidden="true"><use href="#i-check"/></svg><b>¡Cita confirmada!</b><small>Miércoles 12 · 8:00 am</small></div>
+            </div>
+          </div>
+        </div>
+        <p class="note-ill">Ilustración del proceso de reserva</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="precios">
+    <div class="wrap">
+      <h2 data-in><span class="dim">Precios claros,</span><span class="hl" data-hl><b></b><span>sin sorpresas.</span><b></b></span></h2>
+      <div class="toggle" role="group" aria-label="Tipo de carro" data-vt="sedan" data-in>
+        <span class="pill" aria-hidden="true"></span>
         <button type="button" aria-pressed="true" data-vt="sedan">Sedán o hatchback</button>
         <button type="button" aria-pressed="false" data-vt="suv">SUV o pick-up</button>
       </div>
-      <div class="grid g3">
-        <article class="card price reveal">
+      <div class="plans">
+        <article class="plan" data-in>
+          <span class="lbl"></span>
           <h3>Parabrisas</h3>
-          <div class="amt" data-sedan="₡20 000" data-suv="₡25 000">₡20 000</div>
-          <ul><li>Pulido técnico del parabrisas</li><li>Protección cerámica: la lluvia resbala</li><li>A domicilio gratis en la GAM</li></ul>
-          <a class="btn btn-ghost js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar</a>
+          <div class="amt"><span class="v" data-sedan="₡20 000" data-suv="₡25 000">₡20 000</span></div>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Pulido técnico del parabrisas</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Protección cerámica: la lluvia resbala</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Promo: vidrio trasero y retrovisores de regalo al agendar en línea</li></ul>
+          <a class="btn btn-line js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar parabrisas</a>
         </article>
-        <article class="card price best reveal">
-          <span class="flag">El más completo</span>
+        <article class="plan best" data-in>
+          <span class="lbl">El más completo</span>
           <h3>Todos los vidrios</h3>
-          <div class="amt">₡40 000</div>
-          <ul><li>Parabrisas, laterales y trasero</li><li>Protección cerámica en todos</li><li>Sin protección: ₡30 000</li></ul>
-          <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar</a>
+          <div class="amt"><span class="v">₡40 000</span></div>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Parabrisas, laterales y trasero</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Protección cerámica en todos</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Sin protección: <span class="num">₡30 000</span></li></ul>
+          <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar todos los vidrios</a>
         </article>
-        <article class="card price reveal">
+        <article class="plan" data-in>
+          <span class="lbl"></span>
           <h3>Pulido de focos</h3>
-          <div class="amt">₡20 000 <small>el par</small></div>
-          <ul><li>Quita lo amarillo y opaco</li><li>Sellado con polímero líquido</li><li>Lo podés sumar a cualquier servicio</li></ul>
-          <a class="btn btn-ghost js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar</a>
+          <div class="amt"><span class="v">₡20 000</span><small>el par</small></div>
+          <ul><li><svg aria-hidden="true"><use href="#i-check"/></svg>Quita lo amarillo y opaco</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Sellado con polímero líquido</li><li><svg aria-hidden="true"><use href="#i-check"/></svg>Lo podés sumar a cualquier servicio</li></ul>
+          <a class="btn btn-line js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar focos</a>
         </article>
       </div>
-      <p class="note">El servicio a domicilio en San José, Heredia y Alajuela es <b>gratis</b>. ¿No sabés qué necesita tu carro? <a class="js-wa" data-msg="¡Hola! No sé qué servicio necesita mi carro, les mando una foto:" href="https://wa.me/50670892537">Mandanos una foto por WhatsApp</a> y te recomendamos.</p>
+      <p class="fine">Domicilio <b>gratis</b> en San José, Heredia y Alajuela.</p>
     </div>
   </section>
 
-  <!-- CÓMO FUNCIONA -->
   <section id="como">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Así de fácil</span>
-        <h2>Restauración profesional en 3 pasos</h2>
-      </div>
-      <div class="steps">
-        <article class="card step reveal"><h3>Diagnóstico y cotización</h3><p>Agendá en línea o mandanos una foto por WhatsApp. Te damos un precio transparente al instante.</p></article>
-        <article class="card step reveal"><h3>Pulido técnico</h3><p>Llegamos a tu casa o trabajo. Usamos óxido de cerio, polish especial para vidrios y máquinas rotativas para eliminar la capa dañada sin deformar el vidrio.</p></article>
-        <article class="card step reveal"><h3>Protección</h3><p>No solo limpiamos: aplicamos un sellador cerámico para que la lluvia resbale y el brillo dure meses.</p></article>
-      </div>
+      <h2 data-in><span class="dim">Así de fácil,</span><span class="hl" data-hl><b></b><span>en 3 pasos.</span><b></b></span></h2>
+      <ol class="steps">
+        <li data-in><span class="n">1</span><h3>Agendás en línea</h3><p>En 1 minuto elegís servicio, día y hora libre. Sin llamadas.</p></li>
+        <li data-in><span class="n">2</span><h3>Llegamos y pulimos</h3><p>Óxido de cerio, polish para vidrios y máquinas rotativas, sin deformar el vidrio.</p></li>
+        <li data-in><span class="n">3</span><h3>Sellamos y listo</h3><p>Protección cerámica para que la lluvia resbale y el brillo dure meses.</p></li>
+      </ol>
     </div>
   </section>
 
-  <!-- ZONAS Y HORARIO -->
-  <section class="alt" id="zonas">
-    <div class="wrap zones">
-      <div class="reveal">
-        <span class="eyebrow">Vamos donde estés</span>
-        <h2 style="margin-top:12px">Domicilio gratis en toda la GAM</h2>
-        <div class="zl"><a href="/pulido-parabrisas-san-jose/">San José</a><a href="/pulido-parabrisas-heredia/">Heredia</a><a href="/pulido-parabrisas-alajuela/">Alajuela</a><a href="/pulido-parabrisas-cartago/">Cartago <small style="font-weight:400;color:var(--mute)">· ₡5 000</small></a></div>
-        <p class="lead">Trabajamos en tu casa, en el parqueo de tu trabajo o donde tengás el carro. Vos seguís en lo tuyo.</p>
+  <section id="zonas">
+    <div class="wrap">
+      <h2 data-in><span class="dim">Vamos donde</span><span class="hl" data-hl><b></b><span>esté tu carro.</span><b></b></span></h2>
+      <p class="sub" data-in>No tenemos local: trabajamos en tu casa, en el parqueo de tu trabajo o donde lo tengás.</p>
+      <div class="zones">
+        <div class="zone free" data-in><span class="fee">Gratis</span><p><b>San José, Heredia y Alajuela</b></p></div>
+        <div class="zone" data-in><span class="fee">+ ₡5 000</span><p><b>Cartago, Tres Ríos, Grecia</b> y alrededores</p></div>
+        <div class="zone" data-in><span class="fee">+ ₡10 000</span><p><b>San Ramón, Orotina, Puriscal y Zarcero</b></p></div>
       </div>
-      <div class="card reveal">
-        <h3 style="margin-bottom:12px">Horario</h3>
-        <div class="hours" id="hours">
-          <div data-d="1-6"><span>Lunes a sábado</span><span>6:00 am – 4:00 pm</span></div>
-          <div data-d="0"><span>Domingo</span><span>8:00 am – 3:00 pm</span></div>
-        </div>
-        <a class="btn btn-cta js-book" style="margin-top:22px;width:100%" href="https://citas.glassstudiocr.com/reservar/"><svg><use href="#i-cal"/></svg>Ver horas libres</a>
-      </div>
+      <div class="hours" id="hours" data-in><span data-d="1-6">Lun a sáb · 6 am – 4 pm</span><span data-d="0">Dom · 8 am – 3 pm</span></div>
     </div>
   </section>
 
-  <!-- RESEÑAS REALES (comentarios de clientes en Facebook) -->
   <section id="resenas">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Clientes reales</span>
-        <h2>Lo que dicen de nosotros</h2>
+      <h2 data-in><span class="dim">Lo que dicen</span><span class="hl" data-hl><b></b><span>nuestros clientes.</span><b></b></span></h2>
+      <div class="revs">
+        <figure class="rv" data-in><div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>“Muy buen servicio al cliente, me quedaron como nuevo.”</blockquote><figcaption><span class="av">G</span><span><b>Grace C.</b>Pulido de focos · Facebook</span></figcaption></figure>
+        <figure class="rv" data-in><div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>“Excelente trabajo. Recomendados y servicio al cliente.”</blockquote><figcaption><span class="av">A</span><span><b>Alejandro G.</b>Facebook</span></figcaption></figure>
+        <figure class="rv" data-in><div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>“Excelente servicio y atención, ¡muchas gracias!”</blockquote><figcaption><span class="av">G</span><span><b>Gabriel C.</b>Instagram</span></figcaption></figure>
+        <figure class="rv" data-in><div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>“Recomendado al 100 %.”</blockquote><figcaption><span class="av">J</span><span><b>Jhulian R.</b>Instagram</span></figcaption></figure>
       </div>
-      <div class="grid g2">
-        <figure class="card quote reveal">
-          <blockquote>“Muy buen servicio al cliente, me quedaron como nuevo.”</blockquote>
-          <figcaption><span class="av">G</span><span><b>Grace C.</b><small>Pulido de focos · comentario en Facebook</small></span></figcaption>
-        </figure>
-        <figure class="card quote reveal">
-          <blockquote>“Excelente trabajo 💯 Recomendados y servicio al cliente.”</blockquote>
-          <figcaption><span class="av">A</span><span><b>Alejandro G.</b><small>Comentario en Facebook</small></span></figcaption>
-        </figure>
-        <figure class="card quote reveal">
-          <blockquote>“Excelente servicio y atención, ¡muchas gracias! 👍”</blockquote>
-          <figcaption><span class="av">G</span><span><b>Gabriel C.</b><small>Comentario en Instagram</small></span></figcaption>
-        </figure>
-        <figure class="card quote reveal">
-          <blockquote>“Recomendado al 100 %.”</blockquote>
-          <figcaption><span class="av">J</span><span><b>Jhulian R.</b><small>Comentario en Instagram</small></span></figcaption>
-        </figure>
-      </div>
-      <div class="card gr reveal">
-        <div><span class="stars" aria-hidden="true">★★★★★</span><p style="margin-top:4px">¿Ya te atendimos? Tu reseña en Google ayuda a otros a encontrarnos.</p></div>
-        <a class="btn btn-ghost" href="https://g.page/r/CZLaHgXQEDONEAI/review" target="_blank" rel="noopener">Dejar mi reseña en Google</a>
-      </div>
+      <div class="greview" data-in><a class="btn btn-line" href="https://g.page/r/CZLaHgXQEDONEAI/review" target="_blank" rel="noopener">Dejar mi reseña en Google</a></div>
     </div>
   </section>
 
-  <!-- PREGUNTAS FRECUENTES -->
   <section id="faq">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Preguntas frecuentes</span>
-        <h2>Todo lo que necesitás saber</h2>
-      </div>
+      <h2 data-in><span class="dim">Antes de</span><span class="hl" data-hl><b></b><span>agendar.</span><b></b></span></h2>
       <div class="faq">
-        <details class="reveal"><summary>¿Dónde están ubicados? ¿Llegan a mi zona?</summary><p>No tenemos local: el servicio es 100 % a domicilio. Vamos a tu casa, trabajo o donde tengás el carro parqueado, y el traslado es gratis en toda la GAM (San José, Heredia y Alajuela).</p></details>
-        <details class="reveal"><summary>¿Cuánto dura el servicio?</summary><p>Cada servicio dura unas 2 horas. Al agendar en línea solo te mostramos las horas que tenemos libres.</p></details>
-        <details class="reveal"><summary>¿Quita cualquier rayón?</summary><p>Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones. Para rayones profundos, mandanos una foto por WhatsApp y te decimos con honestidad si se puede restaurar antes de que pagués nada.</p></details>
-        <details class="reveal"><summary>¿Cuánto dura la protección cerámica?</summary><p>El sellador hace que la lluvia resbale y que el brillo dure meses. Para que te dure más, evitá lavar los vidrios con productos abrasivos.</p></details>
-        <details class="reveal"><summary>¿Y si mi carro no es ni sedán ni SUV?</summary><p>Elegí el que más se parezca. Si al llegar el tipo de carro es otro, el precio se ajusta al real, y te lo decimos antes de empezar.</p></details>
-        <details class="reveal"><summary>¿También pulen focos?</summary><p>Sí. Quitamos lo amarillo y opaco y los sellamos con polímero líquido. Cuesta ₡20 000 el par y lo podés sumar a cualquier servicio de vidrios.</p></details>
+        <details data-in><summary>¿Dónde están ubicados? ¿Llegan a mi zona?</summary><p>No tenemos local: el servicio es 100 % a domicilio. Vamos a tu casa, trabajo o donde tengás el carro, y el traslado es gratis en San José, Heredia y Alajuela.</p></details>
+        <details data-in><summary>¿Cuánto dura el servicio?</summary><p>Alrededor de 1 hora por carro. Al agendar en línea solo te mostramos las horas que tenemos libres.</p></details>
+        <details data-in><summary>¿Quita cualquier rayón?</summary><p>Eliminamos gota seca, lluvia ácida, hongos, manchas y micro rayones. Si un rayón es profundo, lo revisamos antes de empezar y te decimos con honestidad si se puede restaurar.</p></details>
+        <details data-in><summary>¿Cuánto dura la protección cerámica?</summary><p>El sellador hace que la lluvia resbale y que el brillo dure meses. Para que te dure más, evitá lavar los vidrios con productos abrasivos.</p></details>
+        <details data-in><summary>¿Y si mi carro no es ni sedán ni SUV?</summary><p>Elegí el que más se parezca. Si al llegar el tipo de carro es otro, el precio se ajusta al real, y te lo decimos antes de empezar.</p></details>
+        <details data-in><summary>¿También pulen focos?</summary><p>Sí. Quitamos lo amarillo y opaco y los sellamos con polímero líquido. Cuesta ₡20 000 el par y lo podés sumar a cualquier servicio de vidrios.</p></details>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL -->
   <section class="final">
     <div class="wrap">
-      <h2 class="reveal">Volvé a ver claro desde hoy</h2>
-      <p class="lead reveal">Agendá en 1 minuto o mandanos una foto. Te respondemos por WhatsApp.</p>
-      <div class="ctas reveal">
-        <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/"><svg><use href="#i-cal"/></svg>Agendar mi cita</a>
-        <a class="btn btn-wa js-wa" data-msg="¡Hola GlassStudioCR! Quiero cotizar el pulido de mi carro." href="https://wa.me/50670892537"><svg><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+      <div class="badge" data-in><img src="logo-icon.png" alt="" width="120" height="95"></div>
+      <h2 data-in><span class="dim">Volvé a</span><span class="hl" data-hl><b></b><span>ver claro.</span><b></b></span></h2>
+      <p class="sub" data-in>Elegí tu servicio, el día y la hora. Nosotros llegamos.</p>
+      <div class="ctas" data-in>
+        <a class="btn btn-cta btn-big js-book" href="https://citas.glassstudiocr.com/reservar/"><svg aria-hidden="true"><use href="#i-cal"/></svg>Agendar en 1 minuto <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
+      <ol class="mini" data-in>
+        <li><span>1</span>Agendás</li>
+        <li><span>2</span>Llegamos</li>
+        <li><span>3</span>Ves claro</li>
+      </ol>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">
+  <div class="wrap foot">
     <div>
-      <a href="#inicio" aria-label="GlassStudioCR, inicio"><img src="logo.png" alt="GlassStudioCR" width="227" height="73" style="height:56px;width:auto"></a>
-      <p style="margin-top:10px">Pulido y restauración de parabrisas, vidrios y focos a domicilio. Costa Rica.</p>
-    </div>
-    <div>
-      <h4>Contacto</h4>
-      <a class="js-wa" href="https://wa.me/50670892537">WhatsApp: +506 7089-2537</a><br>
-      <a href="mailto:GlassStudioCR@gmail.com">GlassStudioCR@gmail.com</a>
-    </div>
-    <div>
-      <h4>Horario</h4>
-      <p>Lun a sáb: 6 am – 4 pm<br>Dom: 8 am – 3 pm</p>
+      <a class="logo" href="#inicio" aria-label="GlassStudioCR, inicio"><img src="logo-icon.png" alt="" width="397" height="314"><span>GlassStudio<b>CR</b></span></a>
+      <p>Pulido y restauración de parabrisas, vidrios y focos a domicilio. Costa Rica.</p>
+      <p><a class="js-wa" href="https://wa.me/50670892537">WhatsApp +506 7089-2537</a><br><a href="mailto:GlassStudioCR@gmail.com">GlassStudioCR@gmail.com</a></p>
     </div>
     <nav aria-label="Servicios">
       <h4>Servicios</h4>
-      <a href="/pulido-de-parabrisas/">Pulido de parabrisas</a><br>
-      <a href="/quitar-hongo-gota-seca/">Quitar hongo y gota seca</a><br>
-      <a href="/quitar-rayones-parabrisas/">Quitar rayones del parabrisas</a><br>
-      <a href="/pulido-de-focos/">Pulido de focos</a><br>
+      <a href="/pulido-de-parabrisas/">Pulido de parabrisas</a>
+      <a href="/quitar-hongo-gota-seca/">Quitar hongo y gota seca</a>
+      <a href="/quitar-rayones-parabrisas/">Quitar rayones del parabrisas</a>
+      <a href="/pulido-de-focos/">Pulido de focos</a>
       <a href="/proteccion-ceramica-vidrios/">Protección cerámica</a>
     </nav>
     <nav aria-label="Zonas">
       <h4>Zonas</h4>
-      <a href="/pulido-parabrisas-san-jose/">Pulido de parabrisas en San José</a><br>
-      <a href="/pulido-parabrisas-heredia/">Pulido de parabrisas en Heredia</a><br>
-      <a href="/pulido-parabrisas-alajuela/">Pulido de parabrisas en Alajuela</a><br>
+      <a href="/pulido-parabrisas-san-jose/">Pulido de parabrisas en San José</a>
+      <a href="/pulido-parabrisas-heredia/">Pulido de parabrisas en Heredia</a>
+      <a href="/pulido-parabrisas-alajuela/">Pulido de parabrisas en Alajuela</a>
       <a href="/pulido-parabrisas-cartago/">Pulido de parabrisas en Cartago</a>
     </nav>
   </div>
 </footer>
 
-<!-- Botones fijos -->
 <div class="mbar">
-  <a class="btn btn-wa js-wa" data-msg="¡Hola GlassStudioCR! Quiero cotizar el pulido de mi carro." href="https://wa.me/50670892537"><svg><use href="#i-wa"/></svg>WhatsApp</a>
-  <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/"><svg><use href="#i-cal"/></svg>Agendar</a>
+  <a class="btn btn-cta js-book" href="https://citas.glassstudiocr.com/reservar/"><svg aria-hidden="true"><use href="#i-cal"/></svg>Agendar en 1 minuto <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
-<a class="fab js-wa" aria-label="Escribinos por WhatsApp" data-msg="¡Hola GlassStudioCR! Quiero cotizar el pulido de mi carro." href="https://wa.me/50670892537"><svg><use href="#i-wa"/></svg></a>
 
 <script>
 (function(){
   var WA = "50670892537";
-
-  /* Enlaces de WhatsApp con mensaje listo */
+  window.__waLink = function(m){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(m); };
   document.querySelectorAll(".js-wa").forEach(function(a){
-    var m = a.getAttribute("data-msg") || "¡Hola GlassStudioCR! Quiero información.";
-    a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(m);
+    a.href = window.__waLink(a.getAttribute("data-msg") || "¡Hola GlassStudioCR! Quiero información.");
     a.target = "_blank"; a.rel = "noopener";
   });
   document.querySelectorAll(".js-book").forEach(function(a){ a.target = "_blank"; a.rel = "noopener"; });
-
-  /* Medición para tus anuncios de Meta: si instalás el Píxel de Meta (fbq),
-     cada clic en WhatsApp o Agendar se cuenta como "Contact" / "Lead". */
   document.addEventListener("click", function(e){
     var a = e.target.closest && e.target.closest(".js-wa,.js-book");
     if (!a) return;
@@ -573,7 +705,6 @@ footer a{text-decoration:none}
     } catch(_){}
   });
 
-  /* Abierto ahora (hora de Costa Rica) */
   try {
     var parts = new Intl.DateTimeFormat("en-US",{timeZone:"America/Costa_Rica",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
     var get = function(t){ var p = parts.find(function(x){return x.type===t}); return p ? p.value : ""; };
@@ -591,66 +722,21 @@ footer a{text-decoration:none}
     });
   } catch(_){}
 
-  /* Precios según tipo de carro */
-  var btns = document.querySelectorAll(".toggle button");
+  var box = document.getElementById("ba"), rng = document.getElementById("ba-range");
+  rng.addEventListener("input", function(){ box.style.setProperty("--pos", rng.value + "%"); });
+
+  var tg = document.querySelector(".toggle"), btns = tg.querySelectorAll("button");
   btns.forEach(function(b){
     b.addEventListener("click", function(){
-      btns.forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
       var vt = b.getAttribute("data-vt");
+      tg.setAttribute("data-vt", vt);
+      btns.forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
       document.querySelectorAll("[data-sedan]").forEach(function(el){ el.textContent = el.getAttribute("data-" + vt); });
     });
   });
 
-  /* Ilustración del slider (se reemplaza por tus fotos reales) */
-  function scene(dirty){
-    var s = '<svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="'+(dirty?"Parabrisas con gota seca y manchas":"Parabrisas limpio y transparente")+'">'
-      + '<defs><linearGradient id="sky'+dirty+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cc7e8"/><stop offset=".55" stop-color="#cfeaf2"/><stop offset=".56" stop-color="#5d7a52"/><stop offset="1" stop-color="#3e5537"/></linearGradient>'
-      + '<radialGradient id="sun'+dirty+'" cx=".72" cy=".22" r=".25"><stop offset="0" stop-color="#fff8d8"/><stop offset="1" stop-color="#fff8d8" stop-opacity="0"/></radialGradient></defs>'
-      + '<rect width="800" height="600" fill="url(#sky'+dirty+')"/><rect width="800" height="600" fill="url(#sun'+dirty+')"/>'
-      + '<path d="M0 330 Q120 280 230 310 T470 300 T800 290 V340 H0Z" fill="#4f6d47"/>'
-      + '<path d="M330 600 L392 332 H408 L470 600Z" fill="#555c60"/><path d="M398 340h4v18h-4zM397 380h6v26h-6zM395 440h10v36h-10zM393 520h14v50h-14z" fill="#f1f1e6"/>'
-      + '<g fill="#2f4a2b"><circle cx="90" cy="300" r="34"/><circle cx="150" cy="292" r="26"/><circle cx="660" cy="290" r="30"/><circle cx="720" cy="300" r="38"/></g>';
-    if (dirty) {
-      s += '<rect width="800" height="600" fill="#e9eef0" opacity=".42"/><rect width="800" height="600" fill="#8a8f80" opacity=".16"/>';
-      var r = 7, g = "";
-      for (var i=0;i<260;i++){ r = (r*9301+49297)%233280; var x = r/233280*800; r=(r*9301+49297)%233280; var y = r/233280*470; r=(r*9301+49297)%233280; var rad = 2 + r/233280*9;
-        g += '<circle cx="'+x.toFixed(0)+'" cy="'+y.toFixed(0)+'" r="'+rad.toFixed(1)+'"/>'; }
-      s += '<g fill="#fff" opacity=".78">'+g+'</g>';
-      s += '<g stroke="#fff" stroke-opacity=".35" stroke-width="1.5" fill="none"><path d="M60 470 A360 360 0 0 1 400 140"/><path d="M90 470 A330 330 0 0 1 400 175"/><path d="M420 470 A330 330 0 0 1 740 170"/></g>';
-    } else {
-      s += '<path d="M0 0 L260 0 L0 380Z" fill="#fff" opacity=".10"/><path d="M520 0 L600 0 L330 600 L250 600Z" fill="#fff" opacity=".07"/>';
-      s += '<g fill="#e8fbff" opacity=".7"><circle cx="160" cy="120" r="5"/><circle cx="210" cy="190" r="4"/><circle cx="560" cy="140" r="5"/><circle cx="610" cy="230" r="3.5"/><circle cx="300" cy="80" r="3"/></g>';
-    }
-    s += '<path d="M0 470 Q400 430 800 470 V600 H0Z" fill="#14181b"/><path d="M0 470 Q400 430 800 470" stroke="#2a3136" stroke-width="6" fill="none"/>'
-      + '<path d="M90 520 L420 452" stroke="#0b0d0f" stroke-width="9" stroke-linecap="round"/></svg>';
-    return s;
-  }
-  var bb = document.getElementById("ba-before"), ba = document.getElementById("ba-after");
-  if (bb && !bb.children.length) bb.innerHTML = scene(1);
-  if (ba && !ba.children.length) ba.innerHTML = scene(0);
-
-  /* Slider */
-  var box = document.getElementById("ba"), rng = document.getElementById("ba-range");
-  function setPos(v){ box.style.setProperty("--pos", v + "%"); }
-  rng.addEventListener("input", function(){ setPos(rng.value); });
-  /* Pequeña demostración al aparecer, para que la gente entienda que se mueve */
-  var demoed = false;
-  function demo(){
-    if (demoed || matchMedia("(prefers-reduced-motion: reduce)").matches) return; demoed = true;
-    var t0 = null, touched = false;
-    rng.addEventListener("pointerdown", function(){ touched = true; }, {once:true});
-    function f(t){ if (touched) return; if (!t0) t0 = t; var p = (t - t0)/1800; if (p > 1) { setPos(62); rng.value = 62; return; }
-      var v = 62 + Math.sin(p*Math.PI*2) * 26; setPos(v); rng.value = v; requestAnimationFrame(f); }
-    requestAnimationFrame(f);
-  }
-
-  /* Animación suave al hacer scroll */
-  var els = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); if (e.target.contains(box)) setTimeout(demo, 500); } }); }, {threshold:.15});
-    els.forEach(function(el){ io.observe(el); });
-  } else { els.forEach(function(el){ el.classList.add("in"); }); }
 })();
 </script>
+<script type="module" src="js/portada.js"></script>
 </body>
 </html>
