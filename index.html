@@ -92,10 +92,9 @@ section{padding:88px 0;position:relative}
 /* Cielo de destellos */
 .sky{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
   background:radial-gradient(1200px 700px at 50% -10%,rgba(43,179,192,.20),transparent 60%),radial-gradient(900px 600px at 100% 60%,rgba(43,179,192,.08),transparent 60%),var(--bg)}
-.sky i{position:absolute;inset:-50%;background-repeat:repeat}
-.sky .s1{background-image:radial-gradient(1px 1px at 20px 30px,rgba(234,246,245,.55),transparent),radial-gradient(1px 1px at 140px 90px,rgba(234,246,245,.4),transparent),radial-gradient(1.5px 1.5px at 260px 170px,rgba(95,224,234,.6),transparent),radial-gradient(1px 1px at 330px 40px,rgba(234,246,245,.35),transparent);background-size:360px 220px;animation:tw 6s ease-in-out infinite alternate}
-.sky .s2{background-image:radial-gradient(1px 1px at 60px 120px,rgba(234,246,245,.45),transparent),radial-gradient(2px 2px at 210px 60px,rgba(95,224,234,.45),transparent),radial-gradient(1px 1px at 300px 200px,rgba(234,246,245,.3),transparent);background-size:420px 260px;animation:tw 9s ease-in-out -3s infinite alternate}
-@keyframes tw{from{opacity:.35}to{opacity:1}}
+.sky i{position:absolute;inset:0;background-repeat:repeat}
+.sky .s1{background-image:radial-gradient(1px 1px at 20px 30px,rgba(234,246,245,.55),transparent),radial-gradient(1px 1px at 140px 90px,rgba(234,246,245,.4),transparent),radial-gradient(1.5px 1.5px at 260px 170px,rgba(95,224,234,.6),transparent),radial-gradient(1px 1px at 330px 40px,rgba(234,246,245,.35),transparent);background-size:360px 220px}
+.sky .s2{background-image:radial-gradient(1px 1px at 60px 120px,rgba(234,246,245,.45),transparent),radial-gradient(2px 2px at 210px 60px,rgba(95,224,234,.45),transparent),radial-gradient(1px 1px at 300px 200px,rgba(234,246,245,.3),transparent);background-size:420px 260px}
 
 /* Recuadro de selección (firma visual) */
 .hl{position:relative;display:inline-block;padding:0 .14em;margin:.04em 0;color:var(--ink);white-space:nowrap}
@@ -125,7 +124,7 @@ h2 .dim{display:block}
 .arw{transition:transform 200ms var(--ease)}
 
 /* Encabezado */
-header{position:sticky;top:0;z-index:40;background:rgba(4,19,26,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
+header{position:sticky;top:0;z-index:40;background:#04131a;border-bottom:1px solid var(--hair)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 20px "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
 .logo img{height:36px;width:auto}
@@ -143,8 +142,8 @@ header{position:sticky;top:0;z-index:40;background:rgba(4,19,26,.72);backdrop-fi
 .hero .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
 .promo{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;max-width:600px;margin:28px auto 0;padding:16px 18px;border-radius:20px;text-decoration:none;text-align:left;
   color:var(--ctaink);background:linear-gradient(135deg,#ffe08a,var(--cta) 60%,#f0a614);box-shadow:0 18px 40px -18px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.5);position:relative;overflow:hidden;transition:transform 200ms var(--ease)}
-.promo::after{content:"";position:absolute;top:0;bottom:0;left:-40%;width:30%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-18deg);animation:shine 4.5s ease-in-out 1.5s infinite}
-@keyframes shine{0%{left:-40%}35%,100%{left:130%}}
+.promo::after{content:"";position:absolute;top:0;bottom:0;left:0;width:30%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-160%) skewX(-18deg);animation:shine 4.5s ease-in-out 1.5s infinite;will-change:transform}
+@keyframes shine{0%{transform:translateX(-160%) skewX(-18deg)}35%,100%{transform:translateX(460%) skewX(-18deg)}}
 .gift-ic{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:rgba(27,19,0,.12)}
 .gift-ic svg{width:28px;height:28px}
 .promo b{display:block;font:800 17px/1.25 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
