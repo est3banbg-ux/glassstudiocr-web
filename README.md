@@ -3,4 +3,4 @@
 Página principal de glassstudiocr.com: pulido de parabrisas y focos a domicilio en la GAM.
 
 - Citas en línea: https://citas.glassstudiocr.com/reservar/
-- WhatsApp: +506 6150-6610
+- WhatsApp: +506 7089-2537
