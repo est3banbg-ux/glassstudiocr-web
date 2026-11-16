@@ -363,7 +363,6 @@ footer a{text-decoration:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sky i,.track,.promo::after{animation:none!important}*{transition-duration:0ms!important}}
 
 /* Trabajos reales (igual que en reservas) */
-#trabajos h2{margin-bottom:28px}
 .tr-tv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .tr-tv figure,.tr-ad figure,.tr-cars figure{margin:0;position:relative;border-radius:18px;overflow:hidden;background:var(--card);box-shadow:inset 0 0 0 1px var(--hair)}
 .tr-tv video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#000}
@@ -389,6 +388,20 @@ footer a{text-decoration:none}
 .tr-cars img{aspect-ratio:4/5}
 .tr-cars figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 9px;background:linear-gradient(transparent,rgba(4,19,26,.9))}
 @media (min-width:860px){.tr-tv{grid-template-columns:repeat(4,1fr);gap:14px}.tr-fo{padding:22px 18px}.tr-ad{max-width:760px;margin:14px auto 0}.tr-cars{grid-template-columns:repeat(4,1fr);gap:14px}}
+
+.tr-top{margin-top:44px;text-align:center}
+.tr-top h2{font-size:clamp(30px,8vw,52px);line-height:1.02;letter-spacing:-.035em;margin:0}
+.tr-sub{color:var(--mute);font-size:16px;margin:10px auto 22px;max-width:46ch}
+.tr-top .tr-cars{margin-top:14px}
+@media (min-width:860px){.tr-top .tr-cars{grid-template-columns:repeat(3,1fr)}}
+.trust{display:inline-flex;align-items:center;gap:12px;margin:18px auto 0;padding:8px 16px 8px 10px;border-radius:999px;text-decoration:none;color:var(--ink);background:rgba(11,35,41,.75);box-shadow:inset 0 0 0 1px var(--hair);text-align:left;max-width:100%}
+.tr-av{display:flex;flex:none}
+.tr-av img{width:34px;height:34px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--bg);margin-left:-10px}
+.tr-av img:first-child{margin-left:0}
+.trust>span:last-child{min-width:0}
+.trust b{display:block;font:700 14px Figtree,system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trust small{display:block;font-size:12.5px;color:var(--glass)}
+@media (max-width:440px){.tr-av img:nth-child(n+4){display:none}}
 </style>
 </head>
 <body>
@@ -438,6 +451,7 @@ footer a{text-decoration:none}
         <span class="status" id="status"><span class="dot"></span><span id="status-t">Lun a sáb 6 am – 4 pm · Dom 8 am – 3 pm</span></span>
         <h1><span class="dim">No cambiés tu parabrisas.</span><span class="hl" data-hl><b></b><span>Restauralo.</span><b></b></span></h1>
         <p class="sub">Quitamos gota seca, lluvia ácida, hongos y micro rayones de tus vidrios y focos. Vamos a tu casa o trabajo y lo dejamos como de fábrica.</p>
+        <a class="trust" href="#trabajos"><span class="tr-av"><img src="trabajos/mini-cybertruck.webp" alt="" width="56" height="56"><img src="trabajos/mini-porsche.webp" alt="" width="56" height="56"><img src="trabajos/mini-raptor.webp" alt="" width="56" height="56"><img src="trabajos/mini-mercedes.webp" alt="" width="56" height="56"><img src="trabajos/mini-jeep.webp" alt="" width="56" height="56"></span><span><b>Porsche, Cybertruck y más</b><small>Mirá los trabajos reales ↓</small></span></a>
         <a class="promo js-book" href="https://citas.glassstudiocr.com/reservar/?promo=1">
           <span class="gift-ic"><svg aria-hidden="true"><use href="#i-gift"/></svg></span>
           <span><b>Promo ₡25 000: pulido de parabrisas + protección cerámica + vidrio trasero y retrovisores</b><small>Sedán o SUV, mismo precio · tocá aquí para agendar la promo</small></span>
@@ -449,9 +463,35 @@ footer a{text-decoration:none}
         <p class="ease-note"><svg aria-hidden="true"><use href="#i-check"/></svg>Elegís servicio, día y hora. Sin llamadas ni mensajes.</p>
       </div>
 
+
+      <div class="tr-top" id="trabajos">
+      <h2 data-in><span class="dim">Del Cybertruck</span><span class="hl" data-hl><b></b><span>a tu carro.</span><b></b></span></h2>
+      <p class="tr-sub" data-in>Trabajos reales de GlassStudioCR. Carros finos que ya confían en nosotros.</p>
+      <div class="tr-tv" data-in>
+        <figure><video class="tr-v" src="trabajos/porsche.mp4" poster="trabajos/porsche-poster.webp" muted loop playsinline preload="none" width="540" height="960" aria-label="Pulido del parabrisas de un Porsche Macan S"></video><figcaption><b>Porsche Macan S</b>Parabrisas antes y después</figcaption></figure>
+        <figure><video class="tr-v" src="ceramico.mp4" poster="ceramico-poster.webp" muted loop playsinline preload="none" width="478" height="850" aria-label="Le tiran agua al parabrisas con protección cerámica y el agua resbala"></video><figcaption><b>Prueba de agua</b>Con protección cerámica el agua resbala</figcaption></figure>
+        <figure><video class="tr-v" src="trabajos/focos.mp4" poster="trabajos/focos-poster.webp" muted loop playsinline preload="none" width="540" height="960" aria-label="Restauración de focos amarillos: lijado, pulido y sellador UV"></video><figcaption><b>Focos restaurados</b>Lijado, pulido y sellador UV</figcaption></figure>
+        <div class="tr-fo"><b>Focos como nuevos</b><span class="tr-fp">₡20 000 <small>el par</small></span><p>Quitamos lo amarillo y opaco, y les ponemos sellador UV. De noche vuelven a alumbrar.</p><a class="tr-btn js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar focos <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <div class="tr-ad" data-in>
+        <figure><img src="antes-2.webp" alt="Parabrisas opaco con gota seca antes del pulido" width="800" height="1067" loading="lazy"><i>ANTES</i></figure>
+        <figure><img src="despues-2.webp" alt="El mismo parabrisas transparente después del pulido" width="800" height="1067" loading="lazy"><i class="d">DESPUÉS</i></figure>
+      </div>
+      <p class="tr-adc" data-in>El mismo parabrisas, antes y después del pulido</p>
+      <div class="tr-cars" data-in>
+        <figure><img src="trabajos/cybertruck.webp" alt="Puliendo el parabrisas de una Tesla Cybertruck" width="800" height="618" loading="lazy"><figcaption><b>Tesla Cybertruck</b></figcaption></figure>
+        <figure><img src="trabajos/porsche.webp" alt="Porsche Macan S blanco atendido por GlassStudioCR" width="800" height="999" loading="lazy"><figcaption><b>Porsche Macan S</b></figcaption></figure>
+        <figure><img src="car-raptor.webp" alt="Ford Raptor gris atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Ford Raptor 6.2L</b></figcaption></figure>
+        <figure><img src="car-jeep.webp" alt="Jeep clásico azul atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Jeep clásico</b></figcaption></figure>
+        <figure><img src="car-mercedes.webp" alt="Mercedes-Benz clásico azul atendido por GlassStudioCR" width="800" height="987" loading="lazy"><figcaption><b>Mercedes-Benz clásico</b></figcaption></figure>
+        <figure><img src="car-350z.webp" alt="Nissan 350Z negro atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Nissan 350Z</b></figcaption></figure>
+      </div>
+      <a class="tr-btn tr-wide js-book" href="https://citas.glassstudiocr.com/reservar/" data-in>Quiero mis vidrios así <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+
       <div class="frame" data-in>
         <div class="ba" id="ba" style="--pos:62%">
-          <div class="layer before"><img src="antes-parabrisas.webp" alt="Parabrisas con manchas de agua y gota seca antes del pulido" width="1000" height="750" fetchpriority="high"></div>
+          <div class="layer before"><img src="antes-parabrisas.webp" alt="Parabrisas con manchas de agua y gota seca antes del pulido" width="1000" height="750" loading="lazy"></div>
           <div class="layer after"><img src="despues-parabrisas.webp" alt="El mismo parabrisas limpio y transparente después del pulido" width="1000" height="750"></div>
           <span class="tag l">Antes</span><span class="tag r">Después</span>
           <span class="bar"></span>
@@ -520,30 +560,6 @@ footer a{text-decoration:none}
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="trabajos">
-    <div class="wrap">
-      <h2 data-in><span class="dim">Trabajos reales,</span><span class="hl" data-hl><b></b><span>carros de verdad.</span><b></b></span></h2>
-      <div class="tr-tv" data-in>
-        <figure><video class="tr-v" src="trabajos/porsche.mp4" poster="trabajos/porsche-poster.webp" muted loop playsinline preload="none" width="540" height="960" aria-label="Pulido del parabrisas de un Porsche Macan S"></video><figcaption><b>Porsche Macan S</b>Parabrisas antes y después</figcaption></figure>
-        <figure><video class="tr-v" src="ceramico.mp4" poster="ceramico-poster.webp" muted loop playsinline preload="none" width="478" height="850" aria-label="Le tiran agua al parabrisas con protección cerámica y el agua resbala"></video><figcaption><b>Prueba de agua</b>Con protección cerámica el agua resbala</figcaption></figure>
-        <figure><video class="tr-v" src="trabajos/focos.mp4" poster="trabajos/focos-poster.webp" muted loop playsinline preload="none" width="540" height="960" aria-label="Restauración de focos amarillos: lijado, pulido y sellador UV"></video><figcaption><b>Focos restaurados</b>Lijado, pulido y sellador UV</figcaption></figure>
-        <div class="tr-fo"><b>Focos como nuevos</b><span class="tr-fp">₡20 000 <small>el par</small></span><p>Quitamos lo amarillo y opaco, y les ponemos sellador UV. De noche vuelven a alumbrar.</p><a class="tr-btn js-book" href="https://citas.glassstudiocr.com/reservar/">Agendar focos <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-      </div>
-      <div class="tr-ad" data-in>
-        <figure><img src="antes-2.webp" alt="Parabrisas opaco con gota seca antes del pulido" width="800" height="1067" loading="lazy"><i>ANTES</i></figure>
-        <figure><img src="despues-2.webp" alt="El mismo parabrisas transparente después del pulido" width="800" height="1067" loading="lazy"><i class="d">DESPUÉS</i></figure>
-      </div>
-      <p class="tr-adc" data-in>El mismo parabrisas, antes y después del pulido</p>
-      <div class="tr-cars" data-in>
-        <figure><img src="trabajos/cybertruck.webp" alt="Puliendo el parabrisas de una Tesla Cybertruck" width="800" height="618" loading="lazy"><figcaption><b>Tesla Cybertruck</b></figcaption></figure>
-        <figure><img src="trabajos/porsche.webp" alt="Porsche Macan S blanco atendido por GlassStudioCR" width="800" height="999" loading="lazy"><figcaption><b>Porsche Macan S</b></figcaption></figure>
-        <figure><img src="car-raptor.webp" alt="Ford Raptor gris atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Ford Raptor 6.2L</b></figcaption></figure>
-        <figure><img src="car-jeep.webp" alt="Jeep clásico azul atendido por GlassStudioCR" width="800" height="1067" loading="lazy"><figcaption><b>Jeep clásico</b></figcaption></figure>
-      </div>
-      <a class="tr-btn tr-wide js-book" href="https://citas.glassstudiocr.com/reservar/" data-in>Quiero mis vidrios así <svg class="arw" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </section>
 
